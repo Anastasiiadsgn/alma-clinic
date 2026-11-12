@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<script>/* image fallback: if a transformed Cloudinary URL fails, load the original; if that fails too, drop the broken image */
+addEventListener('error',function(e){var i=e.target;if(!i||i.tagName!=='IMG')return;if(!i.dataset.fb&&/\/upload\/[a-z]_[^\/]*\//.test(i.currentSrc||i.src)){i.dataset.fb='1';var o=(i.currentSrc||i.src).replace(/\/upload\/[^\/]+\/(?=v\d)/,'/upload/');i.removeAttribute('srcset');i.removeAttribute('sizes');i.src=o}else{i.remove()}},true);</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Наші послуги — ALMA</title>
+<meta name="description" content="Послуги клініки ALMA у Києві: ін’єкційна та апаратна косметологія, догляд за обличчям і тілом. Ціни та запис на консультацію.">
+<meta name="theme-color" content="#10213F">
+<!-- TODO: підставити реальний домен замість YOUR-DOMAIN.com -->
+<link rel="canonical" href="https://YOUR-DOMAIN.com/services.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ALMA">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:title" content="Наші послуги — ALMA">
+<meta property="og:description" content="Послуги клініки ALMA у Києві: ін’єкційна та апаратна косметологія, догляд за обличчям і тілом. Ціни та запис на консультацію.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/services.html">
+<!-- TODO: og:image — файл 1200×630 px (jpg/png), завантажити на сайт і вказати повну https-адресу -->
+<meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Наші послуги — ALMA">
+<meta name="twitter:description" content="Послуги клініки ALMA у Києві: ін’єкційна та апаратна косметологія, догляд за обличчям і тілом. Ціни та запис на консультацію.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.jpg">
+<link rel="icon" href="favicon/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+<!-- GA4: вставити тег тут -->
+<!-- Meta Pixel: вставити тут -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Nunito:wght@200;300&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Nunito:wght@200;300&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Nunito:wght@200;300&display=swap"></noscript>
+<style>
+:root{--bg:#F5F2EC;--paper:#FBF9F5;--navy:#10213F;--navy2:#1B3157;--gold:#B8955A;--ink:#10213F;--mute:#5E6880;--r:28px;--pad:max(clamp(20px,5vw,72px),calc((100vw - 1640px)/2));--gap:120px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:auto;scroll-padding-top:110px}
+body{font-family:Onest,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.ph{background:linear-gradient(135deg,#d9cfbf,#b9c2d4);overflow:hidden;position:relative}
+.ph img{position:absolute;inset:0}
+.glass{background:rgba(255,255,255,.2);backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);border:1px solid rgba(255,255,255,.45);box-shadow:0 10px 40px rgba(16,33,63,.12)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;background:var(--navy);color:#fff;font-weight:400;font-size:16px;border:0;cursor:pointer;transition:background .25s}
+.btn:hover{background:var(--navy2)}
+.btn.gold{background:var(--gold);color:var(--navy)}.btn.gold:hover{background:#c9a76c}
+.btn.ghost{background:transparent;color:var(--navy);border:1px solid rgba(16,33,63,.3)}
+.wrap{padding:0 var(--pad)}
+section{margin-top:var(--gap)}
+.btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8}
+h1,h2,h3{overflow-wrap:break-word;font-weight:300;letter-spacing:-.035em;line-height:.98}
+h2{font-size:clamp(38px,6.2vw,92px)}
+h2 b{font-weight:400}
+h2 em,.ig-s em{font-style:italic;font-weight:300;text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:.14em}
+.arws{display:flex;gap:10px}
+.arw{width:52px;height:52px;border:0;display:grid;place-items:center;cursor:pointer;background:#ECE8E1;color:var(--navy);transition:background .25s}
+.arw.next{background:var(--navy);color:#fff}.arw:hover{filter:brightness(.95)}
+.arw svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.lead{font-size:clamp(17px,1.5vw,20px);color:var(--mute);max-width:46ch}
+
+/* header */
+header{position:fixed;top:16px;left:28px;right:28px;z-index:50}
+.nav{position:relative;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 14px 10px 36px;color:var(--navy);background:rgba(255,255,255,.34);backdrop-filter:blur(22px) saturate(170%);-webkit-backdrop-filter:blur(22px) saturate(170%);border:1px solid rgba(255,255,255,.7);box-shadow:0 10px 36px rgba(16,33,63,.12),inset 0 1px 0 rgba(255,255,255,.85),inset 0 -1px 0 rgba(255,255,255,.25)}
+.nav::before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(112deg,rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 34%,rgba(255,255,255,0) 66%,rgba(255,255,255,.22) 100%)}
+.nav>*{position:relative}
+
+.logo{font-weight:400;font-size:18px;letter-spacing:.16em}
+.logo i{font-style:normal;color:var(--gold)}
+.menu{display:flex;gap:30px;font-size:15px}
+.nr{display:flex;gap:10px;align-items:center}
+.menu a:hover{color:var(--gold)}
+.nav .btn{padding:12px 22px;font-size:15px}
+.burger{display:none;width:46px;height:46px;border:0;background:var(--navy);cursor:pointer;position:relative}
+.burger span,.burger span::before{position:absolute;left:14px;width:18px;height:2px;background:#fff;content:"";transition:.25s}
+.burger span{top:22px}.burger span::before{left:0;top:-6px;box-shadow:0 12px 0 #fff}
+
+/* typographic intro */
+.tp{--tp:clamp(38px,6.6vw,118px);position:relative}
+.tp-l{position:absolute;left:var(--pad);top:2px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:10px}
+.tp-l::before{content:"";width:7px;height:7px;background:var(--gold)}
+.tp-a{position:absolute;right:var(--pad);top:0;width:clamp(130px,14vw,220px);margin:0}
+.tp-a .ph{aspect-ratio:1.1}
+.tp-a figcaption,.tp-c{font-size:14px;letter-spacing:.07em;text-transform:uppercase;color:var(--mute);line-height:1.35}
+.tp-a figcaption{margin-top:8px;text-align:right}
+.tp-h1,.tp-h2{font-size:var(--tp);font-weight:400;text-transform:uppercase;letter-spacing:-.035em;line-height:.95}
+.tp-h1 span,.tp-h2 span{display:block}
+.tp-h1 .i1{padding-left:11%}
+.tp-h1 small{margin-left:14px;font-size:14px;letter-spacing:.08em;color:var(--mute);font-weight:400}
+.ac{color:var(--gold);font-weight:400}
+.tp-b{position:relative;display:grid;grid-template-columns:minmax(260px,34%) 1fr;grid-template-rows:auto auto;column-gap:clamp(20px,3vw,48px);align-items:end;margin-top:clamp(60px,9vw,150px)}
+.tp-p{grid-column:1;grid-row:2;max-width:300px;padding-bottom:18px}
+.tp-p p{font-size:14px;line-height:1.55;color:var(--mute);margin-bottom:14px}
+.tl{display:inline-flex;align-items:flex-end;gap:10px;margin-top:10px;font-size:15px;line-height:1.3;color:var(--navy);text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:1.5px;text-underline-offset:5px}
+.tl svg{flex:none;width:18px;height:18px;stroke:var(--navy);fill:none;stroke-width:1.8}
+.tp-h2{grid-column:2;grid-row:1/3;align-self:end}
+.tp-h2 .i2{margin-left:6%}.tp-h2 .i3{margin-left:24%}.tp-h2 .i4{margin-left:40%}
+.tp-t{position:absolute;left:0;top:0;z-index:2;width:clamp(150px,15vw,225px);margin:0;transform:rotate(-5deg);box-shadow:0 16px 44px rgba(16,33,63,.2);pointer-events:none}
+.tp-t .st{position:relative;aspect-ratio:1.25;overflow:hidden;background:#d9cfbf}
+.tp-t .st img{position:absolute;inset:0;opacity:0}
+.tp-t .st img.on{opacity:1;z-index:2}
+.tp-t .cp{position:absolute;left:10px;bottom:10px;z-index:3;padding:6px 12px;background:rgba(16,33,63,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.hw{cursor:pointer;transition:color .35s,opacity .35s,transform .45s cubic-bezier(.2,.7,.2,1);outline:0}
+.tp-h2 .hw{display:block;width:fit-content}
+.tp-h2.act .hw{opacity:.28}
+.tp-h2.act .hw.cur{opacity:1;color:var(--gold);transform:translateX(14px)}
+.tp-h2 .hw:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.tp-c{display:none}
+
+/* services: stacking cards */
+.sv-h{margin-bottom:clamp(40px,6vw,80px)}
+.sv-k{font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.sv-k::before{content:"";width:7px;height:7px;background:var(--gold)}
+.sv-h h2{font-size:clamp(40px,6.2vw,96px)}
+.sv-h h2 em{font-style:italic}
+.sv-h .lead{margin-top:24px;font-size:15px;max-width:40ch}
+.sc-list{padding-bottom:20px}
+.sc{position:sticky;top:calc(96px + var(--i)*22px);margin-bottom:32px;min-height:clamp(430px,66vh,560px);padding:clamp(28px,3.4vw,48px);background:var(--paper);border:1px solid rgba(16,33,63,.09);box-shadow:0 -14px 40px rgba(16,33,63,.06);overflow:hidden;transform-origin:50% 0;will-change:transform}
+.sc-g{position:absolute;left:clamp(20px,3vw,44px);top:clamp(14px,2vw,28px);font-size:clamp(80px,13vw,220px);font-weight:400;letter-spacing:-.04em;line-height:1;color:rgba(16,33,63,.05);white-space:nowrap;pointer-events:none;user-select:none}
+.sc h3,.sc-d,.sc-it,.sc .btn{position:relative}
+.sc h3{font-size:clamp(30px,3.6vw,54px);font-weight:400;letter-spacing:-.035em;line-height:1}
+.sc-d{margin-top:22px;max-width:46ch;font-size:15px;color:var(--mute)}
+.sc-it{margin-top:16px;max-width:46ch;font-size:14px;color:var(--navy)}
+.sc .btn{margin-top:28px}
+.sc-n{position:absolute;left:clamp(24px,3.4vw,48px);bottom:clamp(14px,2vw,28px);font-size:clamp(70px,10vw,160px);font-weight:300;letter-spacing:-.05em;line-height:1;color:rgba(16,33,63,.1)}
+.sc-f{position:absolute;right:clamp(24px,3.4vw,48px);bottom:clamp(24px,3.4vw,48px);width:clamp(240px,33%,440px);margin:0}
+.sc-f .ph{aspect-ratio:2/1}
+.sc-f figcaption{margin:0 34px 12px 0;text-align:right;font-size:14px;line-height:1.3;color:var(--mute)}
+.mk{position:absolute;right:-12px;top:12px;z-index:2;width:26px;height:26px;background:#fff;border:1px solid rgba(16,33,63,.5);display:block}
+.mk::after{content:"";position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px 0 0 -3px;background:var(--gold)}
+@media(max-width:820px){
+ .sc{top:calc(84px + var(--i)*12px);min-height:0;display:flex;flex-direction:column}
+ .sc-g{font-size:clamp(64px,19vw,110px)}
+ .sc-f{position:static;width:100%;margin-top:26px}
+ .sc-f figcaption{margin-right:30px}
+ .sc-n{position:static;order:6;margin-top:6px;font-size:56px}
+ .sc .btn{align-self:flex-start}
+}
+/* doctors */
+.dt{margin-top:0;font-size:clamp(28px,4.2vw,64px);font-weight:300;letter-spacing:-.035em;line-height:1.05;max-width:21em;text-indent:clamp(0px,16vw,260px)}
+.dt em{font-style:italic;text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:.12em}
+.dw{--dg:clamp(24px,4vw,64px);position:relative;margin-top:clamp(56px,9vw,150px)}
+.dsl{display:grid}
+.dc{grid-area:1/1;display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:var(--dg);align-items:stretch;opacity:0;visibility:hidden;transition:opacity .45s,visibility .45s}
+.dc.on{opacity:1;visibility:visible}
+.dc-l{display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.dc-l h3{font-size:clamp(34px,4vw,60px);font-weight:300;letter-spacing:-.04em;line-height:.98}
+.dc-l h3 em{font-style:italic}
+.dc-r{margin-top:14px;font-size:14px;font-weight:400}
+.dc-s span{display:block;font-size:14px;color:var(--mute);margin-bottom:6px}
+.dc-s p{display:flex;flex-wrap:wrap;gap:4px 18px}
+.dc-s b{font-size:14px;font-weight:400}
+.dc-p{position:relative;aspect-ratio:4/5;background:#e6dfd2}
+.dc-d{font-size:14px;line-height:1.55;color:var(--mute);max-width:34ch;align-self:start}
+.dnav{position:absolute;right:0;bottom:0;width:calc((100% - 2*var(--dg))/3.1);display:flex;align-items:flex-end;justify-content:space-between;font-size:14px;color:var(--mute)}
+.arw.dn{width:76px;height:76px;background:transparent;border:1px solid var(--navy);color:var(--navy)}
+.arw.dn:hover{background:var(--navy);color:#fff}
+@media(max-width:1024px){
+ .dt{text-indent:0}
+ .dc{grid-template-columns:1fr 1fr;gap:24px}
+ .dc-p{grid-column:1;grid-row:1/3}
+ .dc-l{grid-column:2;grid-row:1}
+ .dc-d{grid-column:2;grid-row:2;max-width:none}
+ .dnav{position:static;width:auto;margin-top:24px}
+}
+@media(max-width:640px){
+ .dc{grid-template-columns:1fr;gap:20px}
+ .dc-p,.dc-l,.dc-d{grid-column:1;grid-row:auto}
+ .dc-p{order:-1}
+ .dc-l{gap:20px}
+}
+
+/* results */
+.res{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(24px,5vw,80px);align-items:center}
+.tabs{display:inline-flex;padding:5px;background:rgba(16,33,63,.07);margin:30px 0 24px}
+.tabs button{border:0;background:none;padding:12px 24px;font:inherit;font-size:15px;cursor:pointer;color:var(--navy)}
+.tabs button[aria-selected=true]{background:var(--navy);color:#fff}
+.cap{margin-top:14px;font-size:14px;color:var(--mute)}
+.cmp{position:relative;aspect-ratio:4/3;overflow:hidden;user-select:none;-webkit-user-select:none;cursor:ew-resize;touch-action:pan-y}
+.cmp .ph{position:absolute;inset:0}
+.cmp img{pointer-events:none}
+.cmp.sim .base img{filter:grayscale(.5) contrast(.78) brightness(.9) saturate(.6)}
+.cmp .over{clip-path:inset(0 0 0 var(--p))}
+.cmp .tag{position:absolute;top:16px;padding:8px 18px;color:#fff;font-size:14px;z-index:3}
+.tag.l{left:16px}.tag.r{right:16px}
+.bar{position:absolute;top:0;bottom:0;left:var(--p);width:56px;margin-left:-28px;z-index:4;cursor:ew-resize;touch-action:none;display:flex;justify-content:center}
+.bar::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;background:#fff;box-shadow:0 0 14px rgba(0,0,0,.3)}
+.knob{position:relative;align-self:center;width:56px;height:56px;display:grid;place-items:center;color:#fff;transition:transform .2s}
+.knob svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.drag .knob{transform:scale(1.12)}
+[hidden]{display:none!important}
+
+/* reviews */
+.rh{margin:0 0 clamp(36px,5vw,64px) clamp(0px,16vw,260px)}
+.rh h2{font-size:clamp(38px,5.6vw,84px);max-width:11em}
+.rh .lead{margin-top:22px;font-size:15px;max-width:40ch}
+.rg{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.rcd{display:flex;flex-direction:column;justify-content:space-between;gap:28px;min-height:clamp(250px,21vw,320px);padding:24px;background:var(--paper);border:1px solid rgba(16,33,63,.08)}
+.stars{display:inline-block;font-size:20px;letter-spacing:3px;line-height:1;background:linear-gradient(90deg,var(--gold) var(--p),rgba(16,33,63,.18) var(--p));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.rcd p{margin-top:18px;font-size:14px;line-height:1.55;color:var(--mute)}
+.rau{display:flex;align-items:center;gap:12px}
+.rav{position:relative;width:44px;height:44px;border-radius:50%;flex:none;overflow:hidden}
+.rau b{display:block;font-size:14px;font-weight:400}
+.rau span:not(.rav){display:block;font-size:14px;color:var(--mute)}
+.rp{position:relative;min-height:clamp(250px,21vw,320px)}
+.rp1{grid-column:span 2}
+
+/* instagram */
+.ig-w{position:relative;min-height:clamp(560px,52vw,760px)}
+.ig-t{position:absolute;left:50%;top:0;transform:translateX(-50%);z-index:2;text-align:center;font-size:clamp(34px,5vw,72px);white-space:nowrap}
+.ig-m{position:absolute;left:50%;top:15%;width:54%;aspect-ratio:1.46;transform:translateX(-50%);}
+.ig-s{position:absolute;left:50%;bottom:58px;transform:translateX(-50%);z-index:2;font-size:clamp(46px,7vw,104px);line-height:1;letter-spacing:-.03em;white-space:nowrap}
+.ig-w>.btn{position:absolute;left:50%;bottom:0;transform:translateX(-50%);padding:8px 8px 8px 30px;gap:22px;white-space:nowrap}
+.btn .ico{width:38px;height:38px;background:var(--gold);display:grid;place-items:center}
+.btn .ico svg{width:19px;height:19px;stroke:var(--navy);fill:none;stroke-width:1.8}
+.ig-l{position:absolute;left:0;top:12%;width:17%;aspect-ratio:1.5;}
+.ig-r{position:absolute;right:0;bottom:6%;width:17%;aspect-ratio:.76;}
+.ig-p{position:absolute;left:0;bottom:12%;max-width:22ch;font-size:14px;color:var(--mute)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,5vw,80px);align-items:stretch}
+.faq h2{font-size:clamp(38px,4.6vw,68px)}
+.fq-l{display:flex;flex-direction:column;justify-content:space-between;gap:48px}
+.fq-h h3{font-size:clamp(20px,1.8vw,26px);font-weight:400;letter-spacing:-.02em;line-height:1.15}
+.fq-h p{margin:12px 0 22px;max-width:34ch;font-size:14px;color:var(--mute)}
+.faq details{margin-bottom:10px;padding:0;background:var(--paper);border:1px solid rgba(16,33,63,.08)}
+.faq summary{display:grid;grid-template-columns:44px 1fr 24px;align-items:center;gap:8px;padding:24px;cursor:pointer;list-style:none;font-size:inherit;letter-spacing:0}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:none}
+.faq .n{font-size:15px;color:var(--mute)}
+.faq .q{font-size:clamp(17px,1.5vw,20px);font-weight:400;letter-spacing:-.015em;color:var(--navy)}
+.faq summary svg{width:22px;height:22px;stroke:var(--navy);fill:none;stroke-width:1.8;transition:transform .3s}
+.faq details[open] summary svg{transform:rotate(90deg)}
+.faq details[open] summary::after{transform:none}
+.faq details p{margin:0;padding:0 24px 24px 76px;color:var(--mute);font-size:15px;max-width:60ch}
+@media(max-width:640px){.faq summary{grid-template-columns:30px 1fr 22px;padding:18px 16px}.faq details p{padding:0 16px 18px 46px}}
+
+/* booking */
+.bk{display:grid;grid-template-columns:1fr 1fr;margin:0;overflow:hidden;background:var(--paper)}
+.bk-i{position:relative;min-height:600px}
+.bk-i img{object-position:50% 30%}
+.bk-f{padding:clamp(40px,6vw,96px) var(--pad) clamp(40px,6vw,96px) clamp(32px,5vw,80px);display:flex;flex-direction:column;justify-content:center}
+.bk-f h2{font-size:clamp(36px,4.6vw,68px);max-width:9em}
+.bk-f .lead{margin-top:18px;font-size:16px}
+.bk-f form{display:grid;gap:10px;margin-top:34px}
+.bk-f input,.bk-f select{width:100%;border:0;border-bottom:1px solid rgba(16,33,63,.35);background:transparent;color:var(--navy);padding:16px 2px;font:inherit;font-size:16px;outline:0;transition:border-color .2s}
+.bk-f input:focus,.bk-f select:focus{border-bottom-color:var(--gold)}
+.bk-f input::placeholder{color:var(--mute)}
+.bk-f .btn{margin-top:22px;width:100%;justify-content:center}
+.sent{font-size:15px;min-height:22px;margin-top:6px}
+
+/* footer */
+.ft{position:relative;overflow:hidden;margin:var(--gap) 0 0;color:#fff;background:var(--navy)}
+.ft-bg{position:absolute;inset:0}
+.ft-bg img{object-position:50% 30%}
+.ft-bg video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.ft-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,33,63,.82),rgba(16,33,63,.7) 55%,rgba(16,33,63,.86))}
+.ft-in{position:relative;z-index:2;padding:clamp(48px,7vw,96px) var(--pad) 0}
+.ft-top{display:grid;grid-template-columns:1.25fr .8fr .9fr 1fr;gap:clamp(28px,4vw,64px)}
+.fl h2{font-size:clamp(30px,3.2vw,48px);font-weight:300;letter-spacing:-.03em;line-height:1.05;max-width:12em;color:#F3EAD7}
+.fl h2 em{font-style:italic;text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:.12em}
+.fl>p{margin-top:20px;font-size:14px;line-height:1.55;color:rgba(255,255,255,.78);max-width:34ch}
+.fk{display:block;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.fl .fk{margin:34px 0 14px}
+.soc{display:flex;gap:8px}
+.soc a{width:40px;height:40px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);display:grid;place-items:center;transition:background .25s}
+.soc a:hover{background:rgba(255,255,255,.9)}.soc a:hover svg{stroke:var(--navy)}
+.soc svg{width:18px;height:18px;stroke:#fff;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.nl{display:flex;align-items:center;gap:10px;max-width:340px;border-bottom:1px solid rgba(255,255,255,.4);margin:26px 0 10px}
+.nl input{flex:1;min-width:0;background:none;border:0;color:#fff;padding:12px 0;font:inherit;font-size:15px;outline:0}
+.nl input::placeholder{color:rgba(255,255,255,.65)}
+.nl .arw{width:40px;height:40px;background:var(--gold);color:var(--navy)}
+.ft-n{font-size:14px;color:var(--gold);min-height:18px}
+.fc{display:flex;flex-direction:column;gap:12px}
+.fc .fk{margin-bottom:12px}
+.fc a{font-size:clamp(17px,1.5vw,22px);line-height:1.25;color:#fff;width:fit-content;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
+.fc a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+.fc-c p{font-size:14px;color:rgba(255,255,255,.7);margin-top:4px}
+.ft-l{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:clamp(56px,9vw,130px);padding-top:20px;border-top:1px solid rgba(255,255,255,.2);font-size:14px;color:rgba(255,255,255,.62)}
+.ft-l a{color:inherit;margin-left:18px}.ft-l a:hover{color:var(--gold)}
+.wm{position:relative;z-index:1;display:flex;justify-content:space-between;padding:0 var(--pad);margin-top:clamp(10px,2vw,28px);margin-bottom:-.2em;font-size:clamp(110px,27.5vw,470px);font-weight:200;letter-spacing:-.04em;line-height:.82;color:rgba(243,234,215,.15);user-select:none}
+
+/* tablet */
+@media(max-width:1024px){
+ :root{--gap:96px}
+ .menu{display:none}.burger{display:block}.nr{display:none}
+ .tp{display:flex;flex-direction:column}
+ .tp-l{position:static;order:0;margin-bottom:18px}
+ .tp-h1{order:1}
+ .tp-a{position:static;order:2;width:min(46%,260px);margin:24px 0 0 auto}
+ .tp-b{order:3;display:flex;flex-direction:column;gap:32px;margin-top:40px}
+ .tp-h1 .i1{padding-left:0}.tp-h2 .i2,.tp-h2 .i3{margin-left:0}.tp-h2 .i4{margin-left:auto}
+ .tp-h2{order:1}
+ .tp-t{position:relative;left:auto;top:auto;order:2;width:min(82%,440px);margin:6px auto 0;pointer-events:auto;transform:none;opacity:1}
+ .tp-p{order:3;max-width:48ch}.tp-c{display:none}
+ .menu.open{color:#fff;display:flex;position:absolute;top:calc(100% + 10px);left:0;right:0;flex-direction:column;gap:0;padding:8px 28px 16px;background:rgba(16,33,63,.96);backdrop-filter:blur(18px);box-shadow:0 20px 50px rgba(16,33,63,.15)}
+ .menu.open a{padding:15px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+ .res,.faq{grid-template-columns:1fr}
+ .bk{grid-template-columns:1fr}.bk-i{min-height:340px}
+ .ig-w{display:flex;flex-direction:column;align-items:center;gap:22px;min-height:0;text-align:center}
+ .ig-t,.ig-s,.ig-m,.ig-p,.ig-w>.btn{position:static;transform:none}
+ .ig-m{width:100%;aspect-ratio:1.3}.ig-l,.ig-r{display:none}.ig-t,.ig-s{white-space:normal}
+ .ft-top{grid-template-columns:1fr 1fr}.fl{grid-column:1/-1}
+ .rh{margin-left:0}.rg{grid-template-columns:1fr 1fr}.rp2{grid-column:span 2}
+}
+/* mobile */
+@media(max-width:640px){
+ :root{--gap:72px}
+ .tp{--tp:clamp(32px,9.6vw,60px)}
+ header{top:12px;left:24px;right:24px}
+ .docs{grid-template-columns:1fr 1fr}.doc:last-child{grid-column:span 2;aspect-ratio:4/3}
+ .cmp{aspect-ratio:4/5}
+ .btn{padding:15px 24px}
+ .rg{grid-template-columns:1fr}.rp1,.rp2{grid-column:auto;min-height:240px}.rcd{min-height:0}
+ .ft-top{grid-template-columns:1fr 1fr}.fc-c{grid-column:1/-1}
+}
+@media(max-width:820px){
+ .docs{grid-template-columns:1fr 1fr}.doc:last-child{grid-column:span 2;aspect-ratio:4/3}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.pl .p{animation:none}}
+/* scroll hero (шаблон) */
+#scroll-container{position:relative;height:calc(var(--vh,100vh)*3)}
+#hero,#section-2{margin-top:0}
+#hero{position:sticky;top:0;height:var(--vh,100vh);width:100%;overflow:hidden;background:var(--navy);z-index:1}
+#bg-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform-origin:center}
+#hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to bottom,rgba(16,33,63,.38) 0%,rgba(16,33,63,.04) 36%,rgba(16,33,63,.8) 100%)}
+#hero-content{position:absolute;bottom:clamp(40px,8vh,84px);left:var(--pad);right:var(--pad);z-index:5;will-change:transform,opacity}
+.hero-label{font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-bottom:18px}
+.hero-title{font-size:clamp(44px,7vw,112px);font-weight:300;letter-spacing:-.04em;line-height:.95;color:#fff;max-width:10em}
+.hero-title em,.hero-overlay-title em{font-style:italic;text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:3px;text-underline-offset:.1em}
+.hero-sub{margin-top:26px;font-size:clamp(15px,1.3vw,18px);color:rgba(255,255,255,.82);max-width:38ch}
+#hero-content .btn{margin-top:30px}
+#scroll-hint{position:absolute;bottom:clamp(40px,8vh,84px);right:var(--pad);z-index:5;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:.6}
+#scroll-hint span{font-size:14px;letter-spacing:.15em;text-transform:uppercase;color:#fff;writing-mode:vertical-rl}
+.scroll-line{width:1px;height:48px;background:linear-gradient(to bottom,rgba(255,255,255,.8),transparent);animation:scrollLine 1.8s ease-in-out infinite}
+@keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+#hero-overlay{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px;opacity:0;pointer-events:none;will-change:opacity,transform}
+.hero-overlay-label{font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-bottom:20px}
+.hero-overlay-title{font-size:clamp(40px,6vw,88px);font-weight:300;line-height:1.02;letter-spacing:-.035em;color:#fff}
+#section-2{position:sticky;top:0;height:var(--vh,100vh);z-index:20;will-change:transform;box-shadow:0 -32px 80px rgba(16,33,63,.3);overflow:hidden;background:var(--bg);display:flex;align-items:center}
+#section-2 .tp{width:100%;--tp:min(6vw,9vh);padding-top:clamp(60px,10vh,110px)}
+#section-2 .tp-l,#section-2 .tp-a{top:clamp(24px,4vh,48px)}
+#section-2 .tp-b{margin-top:clamp(48px,11vh,150px)}
+.tp-after{display:none}
+@media(max-width:1024px){
+ #section-2 .tp{--tp:min(9.4vw,8.6vh)}
+ #section-2 .tp-l,#section-2 .tp-a,#section-2 .tp-p{display:none}
+ #section-2 .tp-t{width:min(60%,320px)}
+ #section-2 .tp-b{margin-top:28px;gap:24px}
+ .tp-after{display:block}
+ #scroll-hint{display:none}
+ #hero-overlay{padding:24px}
+}
+
+/* hero stats */
+.hs{position:absolute;right:0;bottom:0;display:grid;width:clamp(250px,22vw,310px)}
+.stt{display:grid;grid-template-columns:56px 1fr;gap:20px;align-items:center;padding:16px 0}
+.stt+.stt{border-top:1px solid rgba(255,255,255,.25)}
+.si{display:grid;place-items:center;width:56px;height:56px;border:1px solid rgba(184,149,90,.8);background:rgba(255,255,255,.06)}
+.si svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.4;stroke-linecap:butt;stroke-linejoin:miter}
+.stt b{display:block;font-size:clamp(26px,2.8vw,40px);font-weight:400;letter-spacing:-.03em;line-height:1;color:#fff}
+.stt span{display:block;font-size:14px;color:rgba(255,255,255,.78);margin-top:6px;line-height:1.35}
+#scroll-hint{right:auto;left:50%;transform:translateX(-50%)}
+@media(max-width:1024px){
+ .hs{position:static;width:auto;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+ .stt,.stt+.stt{grid-template-columns:1fr;gap:10px;padding:0;border-top:0}
+}
+@media(max-width:640px){.si{display:none}.stt b{font-size:24px}.stt span{font-size:14px}.hs{margin-top:22px}}
+/* the only rounded elements: header and review photos */
+.nav,.nav::before,.nav .btn{border-radius:100px}
+.rav{border-radius:50%}
+/* full-screen video block */
+.vb{position:relative;height:var(--vh,100vh);min-height:560px;overflow:hidden;background:var(--navy);color:#fff;display:flex;flex-direction:column;justify-content:flex-end}
+.vb-v{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.vb-o{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,33,63,.35),rgba(16,33,63,.15) 40%,rgba(16,33,63,.7))}
+.vb-c{position:relative;padding:0 var(--pad) clamp(40px,7vh,90px);display:grid;grid-template-columns:1fr auto;align-items:end;gap:24px 48px}
+.vb-c .sv-k{grid-column:1/3;margin-bottom:0}
+.vb-c h2{font-size:clamp(38px,6vw,96px);text-shadow:0 2px 30px rgba(16,33,63,.35)}
+.vb-g{padding:24px 26px;max-width:340px;display:flex;flex-direction:column;gap:20px;background:rgba(255,255,255,.14);color:#fff}
+.vb-g p{font-size:14px;line-height:1.55;color:rgba(255,255,255,.9)}
+.vb-g .tl{color:#fff}.vb-g .tl svg{stroke:#fff}
+.vb-m{position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,.28);background:rgba(16,33,63,.4);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:20px 0}
+.vb-t{display:flex;width:max-content;animation:vbm 60s linear infinite}
+.vb-t span{display:flex;align-items:center;white-space:nowrap;font-size:clamp(15px,1.6vw,22px);letter-spacing:.04em;text-transform:uppercase}
+.vb-t span::after{content:"";width:7px;height:7px;background:var(--gold);margin:0 clamp(24px,3vw,48px)}
+@keyframes vbm{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.vb-t{animation:none}}
+@media(max-width:820px){.vb-c{grid-template-columns:1fr}.vb-c .sv-k{grid-column:1}.vb-g{max-width:none}}
+
+/* services page */
+.pg{padding-top:clamp(130px,16vw,200px)}
+.pg-h{padding-bottom:clamp(40px,6vw,80px)}
+.pg-h h1{font-size:clamp(52px,10vw,170px);line-height:.92;letter-spacing:-.045em}
+.pg-h h1 b{display:block;font-weight:400}
+.pg-h .lead{margin-top:28px;font-size:15px;max-width:46ch}
+.sp-w{padding:0 var(--pad)}
+.sp{margin:0;display:grid;grid-template-columns:1fr 1fr 1.35fr;column-gap:clamp(24px,4vw,64px);padding:clamp(32px,4vw,56px) 0 clamp(48px,6vw,88px);border-top:1px solid rgba(16,33,63,.14);align-items:start;scroll-margin-top:100px}
+.sp-n{grid-column:1/4;font-size:14px;letter-spacing:.08em;margin-bottom:22px;display:flex;align-items:center;gap:10px}
+.sp-n::before{content:"";width:7px;height:7px;background:var(--gold)}
+.sp-t{font-size:clamp(30px,3.6vw,56px);font-weight:400;letter-spacing:-.03em;line-height:1.02}
+.sp-d{font-size:15px;color:var(--mute);line-height:1.6;max-width:42ch;padding-top:8px}
+.sp-l{list-style:none;padding:0;margin:0}
+.sp-l li{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:15px 0;border-bottom:1px solid rgba(16,33,63,.1);font-size:16px;transition:padding .25s,color .25s}
+.sp-l li:first-child{padding-top:8px}
+.sp-l li:hover{color:var(--gold);padding-left:8px}
+.pp{white-space:nowrap;font-weight:400}.pp small{font-size:14px;color:var(--mute);font-weight:400}
+.pg-f{margin-top:0;padding:clamp(20px,3vw,40px) var(--pad) 0;border-top:1px solid rgba(16,33,63,.14)}
+.pg-f .in{display:grid;grid-template-columns:1fr 1fr 1.35fr;column-gap:clamp(24px,4vw,64px);align-items:start;padding-top:clamp(20px,2vw,32px)}
+.pg-f h3{font-size:clamp(22px,2.2vw,32px);font-weight:400;letter-spacing:-.02em;line-height:1.1}
+.pg-f p{color:var(--mute);font-size:15px;line-height:1.6;max-width:46ch}
+.pg-f .btn{margin-top:22px}
+.sp-a{display:flex;flex-direction:column;gap:clamp(28px,4vw,56px)}
+.sp-f{position:relative;margin:0;max-width:293px;width:100%}
+.sp-f .ph{aspect-ratio:4/3}
+@media(max-width:1024px){.sp-a{grid-column:1/3}.sp-d{grid-column:2}}
+@media(max-width:640px){.sp-a{grid-column:1}.sp-d{grid-column:1}}
+.menu a.cur{color:var(--gold)}
+@media(max-width:1024px){
+ .sp,.pg-f .in{grid-template-columns:1fr 1.2fr}
+ .sp-n{grid-column:1/3}
+ .sp-l{grid-column:1/3;margin-top:28px}
+ .pg-f .in>div:last-child{grid-column:1/3;margin-top:18px}
+}
+@media(max-width:640px){
+ .sp,.pg-f .in{grid-template-columns:1fr}
+ .sp-n,.sp-l,.pg-f .in>div:last-child{grid-column:1}
+ .sp-d{padding-top:14px}
+ .sp-l li{font-size:15px;padding:13px 0}
+}
+
+/* header v2: transparent bar, logo + burger */
+header{top:0;left:0;right:0}
+.nav{padding:18px var(--pad);background:none;border:0;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none;color:#fff;transition:background .3s,color .3s,padding .3s,box-shadow .3s}
+.nav::before{display:none}
+.nav .logo{font-weight:400;font-size:20px}
+.nav .logo i{color:inherit}
+.nr{display:none}
+.menu{display:none}
+.burger{display:block;width:44px;height:44px;background:none;color:inherit}
+.burger span,.burger span::before{background:currentColor;left:11px;width:22px}
+.burger span::before{left:0;box-shadow:0 12px 0 currentColor}
+.nav.lt{color:var(--navy);padding-top:12px;padding-bottom:12px;background:rgba(245,242,236,.72);-webkit-backdrop-filter:blur(20px) saturate(160%);backdrop-filter:blur(20px) saturate(160%);box-shadow:0 8px 30px rgba(16,33,63,.08)}
+.menu.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:8px var(--pad) 28px;background:rgba(16,33,63,.97);color:#fff;font-size:clamp(20px,2.4vw,28px);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+.menu.open a{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.menu a.cur{color:var(--gold)}
+
+/* footer v2 */
+.f-wm{display:flex;justify-content:space-between;font-size:clamp(80px,17vw,300px);font-weight:300;line-height:.82;color:#F3EAD7;user-select:none;margin-bottom:clamp(44px,6vw,90px)}
+.f-cols{display:grid;grid-template-columns:1.1fr .95fr .8fr .95fr 1.2fr;gap:clamp(24px,3vw,48px)}
+.f-cols .fk{color:var(--gold);margin-bottom:8px}
+.f-cols .fc{gap:8px}
+.f-cols .fc a,.f-cols .fc p{font-size:14px;line-height:1.5;margin:0}
+.f-cols .fc a{font-weight:400}
+.f-cols .fc p{color:rgba(255,255,255,.75)}
+.f-cols .soc{margin-top:14px}
+.f-cols .nl{max-width:none;margin:6px 0 12px}
+.f-h{font-size:14px;line-height:1.5;color:rgba(255,255,255,.7)}
+.ft-l{margin-top:clamp(40px,6vw,80px);padding-bottom:22px}
+@media(max-width:1024px){.f-cols{grid-template-columns:repeat(2,1fr)}.f-cols>:last-child{grid-column:1/-1}}
+
+/* scroll-velocity marquee */
+.vb-m{padding:clamp(10px,1.4vw,18px) 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.sv-p{position:relative;overflow:hidden;cursor:grab;user-select:none;-webkit-user-select:none;touch-action:pan-y}
+.sv-s{display:flex;white-space:nowrap;font-size:clamp(28px,3.4vw,52px);line-height:1.2;font-weight:300;letter-spacing:-.02em;will-change:transform}
+.sv-s>span{flex:none;display:flex;align-items:center}
+.sv-s i{display:block;width:.14em;height:.14em;background:var(--gold);margin:0 .6em}
+.sv-p.o .sv-s{-webkit-text-fill-color:transparent;-webkit-text-stroke:max(1px,.028em) currentColor}
+
+/* marquee as separate navy strip */
+.vb-m{background:var(--navy);border:0;-webkit-backdrop-filter:none;backdrop-filter:none;-webkit-mask-image:none;mask-image:none;color:#fff;padding:clamp(22px,3vw,44px) 0;overflow:hidden}
+.vb-m .sv-p+.sv-p{margin-top:clamp(2px,.6vw,10px)}
+
+/* marquee: text only, navy on page background */
+.vb-m{background:none;color:var(--navy);padding:clamp(40px,5vw,72px) 0 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+
+
+/* ===== v2: Comfortaa + Nunito, rhythm, unified controls, menu overlay ===== */
+:root{--fh:"Comfortaa","Nunito",system-ui,sans-serif;--fb:"Nunito",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--fs:clamp(16px,1.4vw,20px);--h1:clamp(32px,3.6vw,52px);--h3:clamp(22px,2.2vw,30px);--gap:200px}
+@media(max-width:1024px){:root{--gap:140px}}
+@media(max-width:640px){:root{--gap:100px}}
+body,button,input,select,textarea{font-family:var(--fb)}
+body{font-size:var(--fs);line-height:1.16;letter-spacing:-.02em}
+h1,h2,h3,.hero-title,.hero-overlay-title,.tp-h1,.tp-h2,.dt,.sv-s,.f-wm,.stt b,.ig-t,.ig-s,.sc-g,.sp-t,.mo-l a .t{font-family:var(--fh)}
+h1,h2,.hero-title,.hero-overlay-title,.sv-h h2,.rh h2,.faq h2,.bk-f h2,.vb-c h2,.ig-t,.pg-h h1{font-size:var(--h1)!important}
+h1,h2,h3,.hero-title,.hero-overlay-title,.tp-h1,.tp-h2,.dt,.sp-t,.ig-s{line-height:.91!important;letter-spacing:-.07em!important;font-weight:300!important}
+.sc h3,.dc-l h3,.sp-t,.ig-w .ig-s{font-size:var(--h3)!important}
+.dt{font-size:clamp(22px,2.4vw,36px)!important}
+.hero-title,.hero-overlay-title{font-size:clamp(38px,4.4vw,64px)!important}
+.sv-s,.f-wm{letter-spacing:-.04em!important;font-weight:400}
+h1 em,h2 em,h3 em,.ig-s em,.hero-title em,.hero-overlay-title em{font-style:normal!important;text-decoration:none!important}
+.lead,.sc-d,.tp-p p,.rcd p,.faq details p,.ig-p,.dc-d,.cap,.sp-d,.hero-sub{font-size:var(--fs)!important;line-height:1.16!important;letter-spacing:-.02em!important}
+.sc-it,.dc-r{font-size:clamp(14px,1.1vw,16px)!important}
+.lead{max-width:34ch}
+/* alignment: one left line, no staggers */
+.pg-h .lead{font-size:var(--fs)!important}
+/* unified controls */
+.btn,.ig-w>.btn,.tabs button,.arw{display:inline-flex;align-items:center;justify-content:center;gap:14px;height:56px;padding:0 28px!important;border:1px solid var(--navy)!important;border-radius:0;background:transparent!important;color:var(--navy)!important;font:400 16px/1 var(--fb);letter-spacing:-.01em;white-space:nowrap;cursor:pointer;transition:background .25s,color .25s}
+.btn svg,.arw svg,.tabs button svg{width:20px;height:20px;flex:none;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.btn:hover,.tabs button:hover,.arw:hover,.tabs button[aria-selected=true]{background:var(--navy)!important;color:#fff!important;filter:none}
+.arw,.nl .arw{width:56px;padding:0!important}
+.tabs{display:flex;gap:12px;padding:0;background:none;margin:34px 0 28px}
+.btn .ico{display:none}
+#hero .btn,.ft .arw,.ft .btn{border-color:#fff!important;color:#fff!important}
+#hero .btn:hover,.ft .arw:hover,.ft .btn:hover{background:#fff!important;color:var(--navy)!important}
+.nr .btn{display:none}
+/* results label */
+.res .sv-k{margin-bottom:22px}
+/* faq */
+.faq{align-items:start}
+.fq-l{display:block}
+.faq summary{align-items:center}
+.faq .q{font-size:var(--fs)!important;line-height:1.16;letter-spacing:-.02em}
+/* header */
+.nav .logo{font-family:var(--fh);font-weight:400;letter-spacing:-.04em;font-size:24px}
+/* menu overlay */
+.mo{position:fixed;inset:0;z-index:70;display:flex;flex-direction:column;padding:0 var(--pad);background:rgba(16,33,63,.9);-webkit-backdrop-filter:blur(34px) saturate(140%);backdrop-filter:blur(34px) saturate(140%);color:#F5F2EC;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.mo.open{opacity:1;visibility:visible}
+.mo-t{display:flex;justify-content:space-between;align-items:center;padding:24px 0;flex:none}
+.mo-t .logo{color:#F5F2EC}
+.mo-x{background:none;border:0;color:#F5F2EC;font:400 16px var(--fb);text-decoration:underline;text-underline-offset:4px;cursor:pointer;padding:8px 0}
+.mo-x:hover{color:var(--gold)}
+.mo-l{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:0}
+.mo-l a{display:grid;grid-template-columns:40% 1fr 56px;align-items:center;border-top:1px solid rgba(245,242,236,.22);padding:clamp(8px,1.6vh,16px) 0;transition:border-color .25s;opacity:0;transform:translateY(24px);transition:border-color .25s,opacity .5s,transform .5s}
+.mo-l a:last-child{border-bottom:1px solid rgba(245,242,236,.22)}
+.mo.open .mo-l a{opacity:1;transform:none;transition-delay:0s,calc(var(--i)*60ms + 150ms),calc(var(--i)*60ms + 150ms)}
+.mo-l a:hover{border-top-color:#fff}
+.mo-l .n{align-self:start;font-size:14px;color:rgba(245,242,236,.6);padding-top:.5em}
+.mo-l .t{font-size:min(6vw,9vh);line-height:.9;letter-spacing:-.07em}
+.mo-l svg{width:clamp(24px,2.6vw,40px);height:auto;aspect-ratio:1;justify-self:end;stroke:#F5F2EC;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s}
+.mo-l a:hover svg{transform:rotate(45deg)}
+.mo-b{flex:none;display:grid;grid-template-columns:40% 1fr auto;gap:20px;padding:28px 0;font-size:14px;color:rgba(245,242,236,.65);align-items:end}
+.mo-b nav{display:flex;flex-direction:column;gap:6px}
+.mo-b nav:nth-child(2){flex-direction:column}
+.mo-b a:hover{color:#fff}
+body.mo-open{overflow:hidden}
+@media(max-width:640px){
+ .mo-l a{grid-template-columns:34px 1fr 28px}
+ .mo-l .t{font-size:min(11vw,8vh)}
+ .mo-l svg{width:24px}
+ .mo-b{grid-template-columns:1fr 1fr}
+ .mo-b>span{grid-column:1/-1}
+}
+
+/* ===== v3 ===== */
+body{font-weight:300}
+b,strong{font-weight:400}
+/* header: pill when scrolled */
+.nav{color:var(--navy);max-width:100%;margin:0 auto;transition:max-width .45s,margin .45s,padding .45s,border-radius .45s,background .3s,color .3s,box-shadow .3s}
+.nav.lt{max-width:min(1120px,calc(100% - 48px));margin-top:12px;padding:8px 10px 8px 32px;border-radius:100px;border:1px solid rgba(255,255,255,.75);background:rgba(255,255,255,.5);box-shadow:0 10px 36px rgba(16,33,63,.12),inset 0 1px 0 rgba(255,255,255,.85)}
+@media(max-width:640px){.nav.lt{padding-left:22px}}
+/* hero: no dimming, navy text */
+#hero::after{display:none}
+.hero-title,.hero-overlay-title,.hero-sub,.stt b,.stt span,#scroll-hint span,.hero-overlay-label{color:var(--navy)!important}
+.stt+.stt{border-top-color:rgba(16,33,63,.22)}
+.scroll-line{background:linear-gradient(to bottom,var(--navy),transparent)}
+.si{background:rgba(255,255,255,.35)}
+#hero .btn,.sc .btn{background:var(--navy)!important;color:#fff!important;border-color:var(--navy)!important}
+#hero .btn:hover,.sc .btn:hover{background:transparent!important;color:var(--navy)!important}
+/* about block hover photo: no captions */
+.tp-t .cp{display:none!important}
+/* marquee: one style, smaller */
+.sv-s{font-size:clamp(22px,2.6vw,40px)!important}
+.sv-p.o .sv-s{-webkit-text-fill-color:currentColor;-webkit-text-stroke:0}
+/* results alignment */
+.res{align-items:start}
+/* reviews header on the doctors grid */
+.rh h2{max-width:21em;text-indent:clamp(0px,16vw,260px)}
+.rh .lead{margin-left:clamp(0px,16vw,260px);max-width:34ch}
+@media(max-width:1024px){.rh h2{text-indent:0}.rh .lead{margin-left:0}}
+/* menu: lighter */
+.mo-l .t{font-size:min(4.6vw,7.4vh)!important;font-weight:300!important}
+/* legal popup */
+.pop{position:fixed;inset:0;z-index:90;display:grid;place-items:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s}
+.pop.open{opacity:1;visibility:visible}
+.pop-b{position:absolute;inset:0;background:rgba(245,242,236,.35);-webkit-backdrop-filter:blur(26px) saturate(150%);backdrop-filter:blur(26px) saturate(150%)}
+.pop-p{position:relative;width:min(760px,100%);max-height:min(82vh,760px);overflow:auto;padding:clamp(28px,4vw,52px);background:rgba(255,255,255,.62);border:1px solid rgba(255,255,255,.8);box-shadow:0 30px 90px rgba(16,33,63,.18);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);transform:translateY(16px);transition:transform .35s}
+.pop.open .pop-p{transform:none}
+.pop-p h3{font-size:var(--h3)!important;margin:0 56px 24px 0}
+.pop-p h4{font-family:var(--fh);font-weight:300;font-size:18px;margin:22px 0 6px;letter-spacing:-.03em}
+.pop-p p{font-size:16px;line-height:1.4;color:var(--mute);margin:0}
+.pop-x{position:absolute;top:16px;right:16px;width:48px;height:48px;display:grid;place-items:center;border:1px solid var(--navy);background:transparent;color:var(--navy);cursor:pointer;transition:background .25s,color .25s}
+.pop-x:hover{background:var(--navy);color:#fff}
+.pop-x svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round}
+body.pop-open{overflow:hidden}
+
+/* ===== v4 ===== */
+/* balanced text */
+h1,h2,h3,h4,p,li,figcaption,.q,.lead,.mo-l .t,.sv-k{text-wrap:balance;hyphens:none;-webkit-hyphens:none;word-break:normal}
+/* header pill = width of the content grid */
+.nav.lt{max-width:calc(100% - 2*var(--pad))!important}
+@media(max-width:640px){.nav.lt{max-width:calc(100% - 24px)!important}}
+/* burger: three equal lines */
+.burger{width:48px;height:44px}
+.burger span,.burger span::before,.burger span::after{position:absolute;display:block;left:0;width:30px;height:2px;background:currentColor;box-shadow:none!important;content:"";transition:transform .25s}
+.burger span{left:9px;top:21px}
+.burger span::before{top:-8px}
+.burger span::after{top:8px}
+/* menu: light only */
+.mo,.mo *{font-weight:300!important}
+/* about block: heading like the others, airy words */
+.tp-h1,.tp-h2{font-size:var(--h1)!important;text-transform:none!important}
+.tp-h2 .hw{margin-bottom:.26em}
+/* hero copy */
+#hero-content{top:0!important;bottom:0!important;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+#hero-content .hs{bottom:clamp(40px,8vh,84px)}
+.hero-title{font-size:var(--h1)!important;max-width:9em}
+.hero-sub{max-width:40ch;margin-top:22px}
+@media(max-width:1024px){#hero-content{top:auto!important;bottom:clamp(40px,8vh,84px)!important;justify-content:flex-end}#hero-content .hs{bottom:auto}}
+/* reviews header on the doctors grid */
+.rh{margin-left:0!important}
+.pop-p{scrollbar-width:thin}
+.pop-p h4{margin-top:26px}
+.pop-p p+p{margin-top:8px}
+
+/* ===== v5: one type system ===== */
+*{font-weight:300!important}
+.btn,.tabs button,.pop-x,.mo-x{font-weight:400!important}
+h1,h2,h3,.hero-title,.hero-overlay-title,.tp-h1,.tp-h2,.dt,.sp-t,.ig-t,.ig-s,.stt b{font-family:var(--fh)!important;font-style:normal!important;line-height:.91!important;letter-spacing:-.07em!important}
+h1 *,h2 *,h3 *,.tp-h1 *,.tp-h2 *,.dt *,.sp-t *,.ig-t *,.ig-s *{font-family:inherit!important;font-style:normal!important;letter-spacing:inherit!important;line-height:inherit!important;text-decoration:none!important}
+h1,h2,.hero-title,.hero-overlay-title,.tp-h1,.tp-h2,.dt,.sp-t,.ig-t,.vb-c h2{font-size:var(--h1)!important}
+h3,.ig-s,.sc h3,.dc-l h3,.stt b{font-size:var(--h3)!important}
+.tp-h1{text-transform:none!important}
+.tp-h2{text-transform:uppercase!important}
+.sp-l li,.q,.faq .q{font-size:var(--fs)!important;line-height:1.16}
+.pp small,.sp-n{font-size:14px!important}
+.mo-l .t{letter-spacing:-.04em!important}
+/* about block: bottoms on one line */
+.tp-h2 .hw:last-child{margin-bottom:0}
+.tp-p{padding-bottom:0}
+/* video block: no blue dimming */
+.vb-o{display:none}
+.vb-c{text-shadow:0 1px 24px rgba(0,0,0,.22)}
+/* header pill: full content width */
+.nav.lt{width:calc(100% - 2*max(10px,calc(var(--pad) - 32px)))!important;max-width:none!important;margin:12px auto 0}
+@media(max-width:640px){.nav.lt{width:calc(100% - 24px)!important}}
+
+.sp-l li{font-size:var(--fs)}
+
+/* ===== v6 ===== */
+/* hero: left copy and right stats share one bottom line; title in two rows */
+#hero-content{top:auto!important;bottom:clamp(40px,8vh,84px)!important;justify-content:flex-end!important}
+#hero-content .hs{bottom:0!important}
+.hs .stt:last-child{padding-bottom:0}
+.hero-title{max-width:none!important}
+/* menu: thinner (Nunito ExtraLight) */
+.mo-l .t{font-family:var(--fb)!important;font-weight:200!important;letter-spacing:-.03em!important;line-height:1!important}
+
+/* instagram: pinned stage, side photos ride in on scroll (layout unchanged) */
+@media(min-width:1025px){
+.igp{height:calc(var(--vh,100vh)*1.9)}
+.igp-s{position:sticky;top:0;height:var(--vh,100vh);display:flex;align-items:center;overflow:hidden;box-sizing:border-box;padding-top:84px}
+.igp-s .ig-w{width:100%}
+.ig-l,.ig-r{will-change:transform}
+}
+@media(prefers-reduced-motion:reduce){.igp{height:auto}.igp-s{position:static;height:auto}}
+
+@media(min-width:1025px){
+.igp-s .ig-w{min-height:min(clamp(560px,52vw,760px),calc(var(--vh,100vh) - 110px))}
+.igp-s .ig-m{width:min(54%,calc((var(--vh,100vh) - 360px)*1.46))}
+}
+
+/* FoldText (ALMA) */
+.f-wm>span{display:inline-block;perspective:700px}
+.f-wm .fp{position:relative;display:inline-block;transform-origin:50% 0%;backface-visibility:hidden;will-change:transform,opacity}
+.f-wm .fp::after{content:attr(data-t);position:absolute;inset:0;pointer-events:none;color:transparent;-webkit-text-fill-color:transparent;background-image:linear-gradient(180deg,rgba(0,0,0,.58) 0%,rgba(0,0,0,.22) 42%,rgba(255,255,255,.26) 100%);-webkit-background-clip:text;background-clip:text;opacity:var(--fc,0)}
+@media(prefers-reduced-motion:reduce){.f-wm .fp{transform:none!important;opacity:1!important}.f-wm .fp::after{opacity:0!important}}
+@media(min-width:1025px){.sp{align-items:stretch}.sp-a{align-self:stretch;justify-content:space-between}.sp-f{margin-top:auto}.sp-f .ph{margin-bottom:0}}
+
+/* ===== mobile: reviews / instagram / footer ===== */
+.rnav{display:none}
+@media(max-width:767px){
+.rg .rp2{display:none}
+.rg .rp1{min-height:0;aspect-ratio:4/3}
+.rcd.off{display:none}
+.rnav{display:flex;align-items:center;justify-content:space-between;margin-top:18px;font-size:14px;color:var(--mute)}
+.igp{height:auto!important}
+.igp-s{position:static!important;height:auto!important;padding:0!important;overflow:visible!important;display:block!important}
+.igp-s .ig-w,.ig-w{display:block!important;position:relative;min-height:0!important;text-align:center;width:100%}
+.ig-w .ig-t{position:static!important;transform:none!important;display:block;margin:0 0 20px;text-transform:uppercase;font-size:clamp(34px,10.6vw,46px)!important;white-space:normal}
+.ig-w .ig-l,.ig-w .ig-r,.ig-w .ig-p{display:none!important}
+.igp-s .ig-m,.ig-w .ig-m{position:relative!important;left:auto!important;top:auto!important;transform:none!important;width:100%!important;aspect-ratio:4/5!important;margin:0}
+.ig-w .ig-s{position:relative!important;left:auto!important;bottom:auto!important;transform:none!important;display:block;margin:-.62em 0 0;font-size:clamp(60px,18vw,76px)!important;z-index:2;white-space:nowrap}
+.ig-w>.btn{position:static!important;transform:none!important;display:flex;width:100%;margin-top:22px;height:64px;padding:0 8px 0 26px!important;justify-content:space-between;border-radius:100px!important}
+.ig-w>.btn svg{width:48px;height:48px;padding:13px;border-radius:50%;background:var(--navy);stroke:#fff}
+.f-cols{grid-template-columns:1fr 1fr!important;gap:36px 20px!important}
+.f-cols>.fc-c{grid-column:auto!important;order:1}
+.f-cols>nav:nth-of-type(3){order:2}
+.f-cols>nav:nth-of-type(1){order:3}
+.f-cols>nav:nth-of-type(2){order:4}
+.f-cols>:last-child{grid-column:1/-1!important;order:5}
+.f-cols .fc a,.f-cols .fc p{font-size:14px;line-height:1.5}
+.f-cols nav.fc a{display:block;padding:5px 0}
+.f-cols .soc{gap:10px;margin-top:16px}
+.f-cols .soc a{width:48px;height:48px}
+.f-cols .soc svg{width:22px;height:22px}
+}
+@media(max-width:767px){
+.ig-w .ig-s{font-size:clamp(38px,11.4vw,46px)!important;text-align:center;width:100%;margin-top:-.5em;white-space:nowrap}
+.ig-w .ig-s em{display:inline-block}
+.ig-w>.btn{border-radius:0!important;height:60px;padding:0 6px 0 22px!important}
+.ig-w>.btn svg{border-radius:0;width:46px;height:46px;padding:13px}
+}
+@media(max-width:767px){
+.ig-w>.btn{display:inline-flex!important;width:auto!important;height:56px!important;margin:22px auto 0!important;padding:0 28px!important;gap:14px;justify-content:center!important;border-radius:0!important}
+.ig-w>.btn svg{width:18px!important;height:18px!important;padding:0!important;background:none!important;border-radius:0!important;stroke:currentColor!important}
+}
+
+/* ===== header: language switch + Book button ===== */
+.nr{display:flex!important;align-items:center;gap:clamp(8px,1.4vw,18px);margin-left:auto;margin-right:clamp(2px,.8vw,10px)}
+.lang{display:flex;align-items:center;gap:0;font-size:14px;letter-spacing:.04em;line-height:1}
+.lang button{appearance:none;-webkit-appearance:none;background:none;border:0;border-radius:0;color:inherit;font:inherit;letter-spacing:inherit;opacity:.5;padding:0 7px;min-height:44px;cursor:pointer;transition:opacity .2s;position:relative}
+.lang button::after{content:"";position:absolute;left:7px;right:7px;bottom:10px;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .25s}
+.lang button.on{opacity:1}.lang button.on::after{transform:scaleX(1)}
+.lang button:hover{opacity:1}
+.lang span{opacity:.35}
+.nr .btn{display:inline-flex!important;height:44px;padding:0 20px!important;font-size:15px;gap:10px;white-space:nowrap}
+.nr .btn svg{width:16px;height:16px}
+.nav:not(.lt) .nr .btn{color:inherit!important;border-color:currentColor!important}
+.nr .btn:hover,.nav:not(.lt) .nr .btn:hover{background:var(--navy)!important;color:#fff!important;border-color:var(--navy)!important}
+@media(max-width:767px){.nav:not(.lt) .nr .btn:hover{background:#fff!important;color:var(--navy)!important;border-color:#fff!important}}
+@media(max-width:560px){.nr{gap:4px;margin-right:0}.nr .btn{height:40px;padding:0 14px!important;font-size:14px}.nr .btn svg{display:none}.lang button{padding:0 6px}.lang button::after{left:6px;right:6px}}
+@media(max-width:390px){.nav .logo{font-size:21px}.nr .btn{padding:0 11px!important}.lang button{padding:0 4px}.lang button::after{left:4px;right:4px}.burger{width:42px!important}}
+@media(max-width:340px){.nav .logo{font-size:19px}.nr .btn{padding:0 9px!important;font-size:13px}.lang button{padding:0 3px}.lang button::after{left:3px;right:3px}.burger{width:38px!important}}
+.nav .nr .btn{border-radius:0!important}
+
+/* ===== booking modal ===== */
+.bkm{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:24px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.bkm.open{opacity:1;visibility:visible}
+.bkm-b{position:absolute;inset:0;background:rgba(16,33,63,.38);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.bkm-p{position:relative;width:min(960px,100%);max-height:min(92vh,640px);display:grid;grid-template-columns:.9fr 1.1fr;background:#F5F2EC;border:1px solid rgba(255,255,255,.7);box-shadow:0 40px 100px rgba(16,33,63,.35);overflow:hidden;transform:translateY(28px) scale(.98);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.bkm.open .bkm-p{transform:none}
+.bkm-i{position:relative;min-height:100%;background:var(--navy);overflow:hidden}
+.bkm-i img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.bkm.open .bkm-i img{transform:scale(1)}
+.bkm-i:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(16,33,63,.78))}
+.bkm-i p{position:absolute;left:28px;right:28px;bottom:26px;z-index:1;margin:0;color:#F5F2EC;font-size:16px;line-height:1.3}
+.bkm-i p b{display:block;font-weight:300;font-family:'Comfortaa',sans-serif;font-size:30px;letter-spacing:-.04em;margin-bottom:6px;color:#D9BC8A}
+.bkm-f{padding:clamp(28px,4vw,52px);overflow:auto;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.bkm-f h3{font-family:'Comfortaa',sans-serif;font-weight:300;font-size:clamp(30px,3.6vw,44px);line-height:.95;letter-spacing:-.07em;color:var(--navy);margin:0;padding-right:44px}
+.bkm-f h3 em{font-style:normal;color:#B8955A}
+.bkm-f .lead{margin:0 0 6px;font-size:16px;line-height:1.2}
+.bkm-f form{display:flex;flex-direction:column;gap:12px}
+.bkm-f input:not([type=checkbox]),.bkm-f select{width:100%;height:52px;border:0;border-bottom:1px solid rgba(16,33,63,.35);background:transparent;font:300 18px 'Nunito',sans-serif;color:var(--navy);padding:0;border-radius:0;outline:0}
+.bkm-f input:focus,.bkm-f select:focus{border-bottom-color:var(--navy)}
+.bkm-f .btn{margin-top:10px;width:100%;justify-content:center}
+.bkm-c{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.25;cursor:pointer}
+.bkm-c input{width:18px;height:18px;margin:1px 0 0;flex:none;accent-color:#10213F;border-radius:0}
+.bkm-c a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.bkm-s{margin:0;min-height:1.2em;font-size:15px;color:#B8955A}
+.bkm-x{position:absolute;top:16px;right:16px;z-index:3;width:48px;height:48px;display:grid;place-items:center;border:1px solid var(--navy);background:#F5F2EC;color:var(--navy);cursor:pointer;transition:background .25s,color .25s}
+.bkm-x:hover{background:var(--navy);color:#F5F2EC}
+.bkm-x svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5}
+.bkm .hp{position:absolute;left:-9999px;opacity:0}
+body.bkm-open{overflow:hidden}
+@media (max-width:760px){.bkm{padding:0;align-items:end}.bkm-p{grid-template-columns:1fr;grid-template-rows:140px 1fr;max-height:94vh;width:100%}.bkm-i p{left:20px;bottom:14px}.bkm-i p b{font-size:22px;margin-bottom:2px}.bkm-i p span{display:none}.bkm-f{padding:24px 20px 28px;gap:10px}.bkm-x{top:12px;right:12px;width:44px;height:44px}.bkm-f h3{padding-right:0}}
+</style></head>
+<body>
+<header><div class="nav">
+ <a class="logo" href="index.html">ALM<i>A</i></a>
+ <div class="nr"><div class="lang" role="group" aria-label="Мова / Language"><button type="button" class="on" data-l="uk" aria-pressed="true">UA</button><span aria-hidden="true">/</span><button type="button" data-l="en" aria-pressed="false">EN</button></div><a class="btn" href="#book" data-book="1">Записатися<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
+ <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span></button>
+</div></header>
+<div class="mo" id="mo" aria-hidden="true">
+ <div class="mo-t"><a class="logo" href="index.html">ALM<i>A</i></a><button class="mo-x" id="mox" type="button">Закрити</button></div>
+ <nav class="mo-l" aria-label="Меню"><a href="index.html" style="--i:0"><span class="n">(1)</span><span class="t">Головна</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a><a href="services.html" style="--i:1"><span class="n">(2)</span><span class="t">Послуги</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a><a href="index.html#doctors" style="--i:2"><span class="n">(3)</span><span class="t">Лікарі</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a><a href="index.html#results" style="--i:3"><span class="n">(4)</span><span class="t">Результати</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a><a href="#reviews" style="--i:4"><span class="n">(5)</span><span class="t">Відгуки</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a><a href="#faq" style="--i:5"><span class="n">(6)</span><span class="t">Питання</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a><a href="index.html#book" style="--i:6"><span class="n">(7)</span><span class="t">Контакти</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></nav>
+ <div class="mo-b"><nav><a href="#" data-pop="privacy">Політика конфіденційності</a><a href="#" data-pop="offer">Договір оферти</a></nav><nav><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a></nav><span>© 2018–2026 ALMA</span></div>
+</div>
+<main class="pg">
+<div class="wrap pg-h"><p class="sv-k">Прайс</p><h1>Наші<b>послуги</b></h1><p class="lead">Комплекс послуг для здоров’я, тонусу й сяйва. Ціни орієнтовні, точну вартість лікар визначає після консультації.</p></div>
+<div class="sp-w">
+<section class="sp" id="inj"><div class="sp-n">01</div><div class="sp-a"><h2 class="sp-t">Ін’єкційна косметологія</h2><figure class="sp-f"><div class="ph"><img width="1200" height="900" alt="Ін’єкційна косметологія" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406398/image.png_dd5ce4e5_2K.webp" srcset="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_480,c_limit/v1794406398/image.png_dd5ce4e5_2K.webp 480w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406398/image.png_dd5ce4e5_2K.webp 800w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1200,c_limit/v1794406398/image.png_dd5ce4e5_2K.webp 1200w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1600,c_limit/v1794406398/image.png_dd5ce4e5_2K.webp 1600w" sizes="(max-width:767px) 100vw, (max-width:1280px) 60vw, 50vw" loading="lazy"></div></figure></div><p class="sp-d">Делікатна корекція та відновлення якості шкіри за допомогою сучасних ін’єкційних методик. Підбираємо препарати й дозування індивідуально, враховуючи особливості обличчя та ваші побажання.</p><ul class="sp-l"><li><span class="pn">Ботулінотерапія (1 зона)</span><span class="pp"><small>від</small> 2 800 <small>грн</small></span></li><li><span class="pn">Лоб + міжбрів’я</span><span class="pp"><small>від</small> 5 000 <small>грн</small></span></li><li><span class="pn">Контурна пластика губ (1 мл)</span><span class="pp"><small>від</small> 4 500 <small>грн</small></span></li><li><span class="pn">Контурна пластика обличчя (1 мл)</span><span class="pp"><small>від</small> 5 000 <small>грн</small></span></li><li><span class="pn">Біоревіталізація</span><span class="pp"><small>від</small> 3 000 <small>грн</small></span></li><li><span class="pn">Мезотерапія обличчя</span><span class="pp"><small>від</small> 3 000 <small>грн</small></span></li><li><span class="pn">Полінуклеотиди</span><span class="pp"><small>від</small> 4 500 <small>грн</small></span></li><li><span class="pn">PRP-терапія (плазмотерапія)</span><span class="pp"><small>від</small> 3 300 <small>грн</small></span></li></ul></section>
+<section class="sp" id="app"><div class="sp-n">02</div><div class="sp-a"><h2 class="sp-t">Апаратна косметологія</h2><figure class="sp-f"><div class="ph"><img width="1200" height="900" alt="Апаратна косметологія" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406398/image.png_4ca909ad_2K.webp" srcset="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_480,c_limit/v1794406398/image.png_4ca909ad_2K.webp 480w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406398/image.png_4ca909ad_2K.webp 800w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1200,c_limit/v1794406398/image.png_4ca909ad_2K.webp 1200w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1600,c_limit/v1794406398/image.png_4ca909ad_2K.webp 1600w" sizes="(max-width:767px) 100vw, (max-width:1280px) 60vw, 50vw" loading="lazy"></div></figure></div><p class="sp-d">Інноваційні технології для покращення якості шкіри, її пружності та чіткості контурів. Поєднуємо ефективні апаратні методики з індивідуальним підбором параметрів відповідно до потреб шкіри.</p><ul class="sp-l"><li><span class="pn">RF-ліфтинг обличчя</span><span class="pp"><small>від</small> 2 500 <small>грн</small></span></li><li><span class="pn">Мікрострумова терапія</span><span class="pp"><small>від</small> 2 100 <small>грн</small></span></li><li><span class="pn">Мікронідлінг (Dermapen)</span><span class="pp"><small>від</small> 1 900 <small>грн</small></span></li><li><span class="pn">Мікроголковий RF-ліфтинг</span><span class="pp"><small>від</small> 6 350 <small>грн</small></span></li><li><span class="pn">SMAS-ліфтинг обличчя</span><span class="pp"><small>від</small> 10 500 <small>грн</small></span></li><li><span class="pn">IPL-фотоомолодження</span><span class="pp"><small>від</small> 2 500 <small>грн</small></span></li><li><span class="pn">Лазерний карбоновий пілінг</span><span class="pp"><small>від</small> 500 <small>грн</small></span></li><li><span class="pn">Безін’єкційна мезотерапія</span><span class="pp"><small>від</small> 3 050 <small>грн</small></span></li></ul></section>
+<section class="sp" id="face"><div class="sp-n">03</div><div class="sp-a"><h2 class="sp-t">Догляд за обличчям</h2><figure class="sp-f"><div class="ph"><img width="1200" height="900" alt="Догляд за обличчям" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406399/image.png_10a8f938_2K.webp" srcset="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_480,c_limit/v1794406399/image.png_10a8f938_2K.webp 480w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406399/image.png_10a8f938_2K.webp 800w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1200,c_limit/v1794406399/image.png_10a8f938_2K.webp 1200w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1600,c_limit/v1794406399/image.png_10a8f938_2K.webp 1600w" sizes="(max-width:767px) 100vw, (max-width:1280px) 60vw, 50vw" loading="lazy"></div></figure></div><p class="sp-d">Професійний догляд, спрямований на очищення, зволоження та відновлення природного балансу шкіри. Підбираємо процедури відповідно до її типу, стану та індивідуальних потреб.</p><ul class="sp-l"><li><span class="pn">Ультразвукова чистка</span><span class="pp"><small>від</small> 1 200 <small>грн</small></span></li><li><span class="pn">Комбінована чистка</span><span class="pp"><small>від</small> 1 300 <small>грн</small></span></li><li><span class="pn">Атравматична чистка</span><span class="pp"><small>від</small> 1 100 <small>грн</small></span></li><li><span class="pn">Хімічний пілінг</span><span class="pp"><small>від</small> 1 100 <small>грн</small></span></li><li><span class="pn">Гідропілінг обличчя</span><span class="pp"><small>від</small> 2 200 <small>грн</small></span></li><li><span class="pn">Карбокситерапія</span><span class="pp"><small>від</small> 900 <small>грн</small></span></li><li><span class="pn">Доглядова процедура за типом шкіри</span><span class="pp"><small>від</small> 1 450 <small>грн</small></span></li><li><span class="pn">Масаж обличчя</span><span class="pp"><small>від</small> 1 000 <small>грн</small></span></li></ul></section>
+<section class="sp" id="body"><div class="sp-n">04</div><div class="sp-a"><h2 class="sp-t">Догляд за тілом</h2><figure class="sp-f"><div class="ph"><img width="1200" height="900" alt="Догляд за тілом" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406399/image.png_c62067b7_2K.webp" srcset="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_480,c_limit/v1794406399/image.png_c62067b7_2K.webp 480w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406399/image.png_c62067b7_2K.webp 800w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1200,c_limit/v1794406399/image.png_c62067b7_2K.webp 1200w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1600,c_limit/v1794406399/image.png_c62067b7_2K.webp 1600w" sizes="(max-width:767px) 100vw, (max-width:1280px) 60vw, 50vw" loading="lazy"></div></figure></div><p class="sp-d">Комплексний підхід до краси та комфорту вашого тіла. Апаратні методики й професійні доглядові процедури допомагають працювати з тонусом шкіри, її рельєфом та контурами тіла.</p><ul class="sp-l"><li><span class="pn">Ендосфера-терапія</span><span class="pp"><small>від</small> 1 450 <small>грн</small></span></li><li><span class="pn">LPG-масаж</span><span class="pp"><small>від</small> 600 <small>грн</small></span></li><li><span class="pn">Пресотерапія</span><span class="pp"><small>від</small> 900 <small>грн</small></span></li><li><span class="pn">Ультразвукова кавітація (1 зона)</span><span class="pp"><small>від</small> 400 <small>грн</small></span></li><li><span class="pn">RF-ліфтинг тіла (1 зона)</span><span class="pp"><small>від</small> 800 <small>грн</small></span></li><li><span class="pn">Вакуумно-роликовий масаж</span><span class="pp"><small>від</small> 500 <small>грн</small></span></li><li><span class="pn">Професійне обгортання STYX</span><span class="pp"><small>від</small> 1 900 <small>грн</small></span></li><li><span class="pn">Пілінг тіла</span><span class="pp"><small>від</small> 1 000 <small>грн</small></span></li></ul></section>
+</div>
+<section id="faq" class="wrap">
+ <div class="faq">
+  <div class="fq-l">
+   <div><p class="sv-k">Питання</p><h2>Часті <em>питання</em></h2></div>
+   
+  </div>
+  <div class="fq-r">
+   <details name="faq"><summary><span class="n">01</span><span class="q">Чи боляче?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></summary><p>Використовуємо анестезію та тонкі голки. Більшість клієнтів описують відчуття як легкий дискомфорт.</p></details>
+   <details name="faq" open><summary><span class="n">02</span><span class="q">Коли буде видно результат?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></summary><p>Залежить від процедури: від одного дня до 3–4 тижнів. Лікар назве терміни на консультації.</p></details>
+   <details name="faq"><summary><span class="n">03</span><span class="q">Скільки сеансів потрібно для тіла?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></summary><p>Зазвичай курс із 6–10 сеансів. Це корекція контуру, а не засіб для схуднення.</p></details>
+   <details name="faq"><summary><span class="n">04</span><span class="q">Які є протипоказання?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></summary><p>Вагітність, онкологічні захворювання, гострі запалення та інші. Лікар перевірить їх перед початком.</p></details>
+   <details name="faq"><summary><span class="n">05</span><span class="q">Скільки триває перша консультація?</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></summary><p>Перша консультація триває 30 хвилин, а її вартість зараховується в першу процедуру.</p></details>
+  </div>
+ </div>
+</section>
+
+<section id="reviews" class="wrap">
+ <p class="sv-k">Відгуки</p>
+ <div class="rh"><h2>За кожним результатом <em>є історія</em></h2><p class="lead">Комфорт. Довіра. Результат. Про це говорять наші клієнти, і ми раді поділитися їхніми словами.</p></div>
+ <div class="rg">
+  <div class="rp rp1 ph"><img width="1200" height="900" alt="Усміхнена клієнтка клініки ALMA" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406396/Generating_reference_image_photo_1cef79ff_2K.webp" srcset="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_480,c_limit/v1794406396/Generating_reference_image_photo_1cef79ff_2K.webp 480w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406396/Generating_reference_image_photo_1cef79ff_2K.webp 800w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1200,c_limit/v1794406396/Generating_reference_image_photo_1cef79ff_2K.webp 1200w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1600,c_limit/v1794406396/Generating_reference_image_photo_1cef79ff_2K.webp 1600w" sizes="(max-width:767px) 100vw, (max-width:1280px) 60vw, 50vw"></div>
+  <article class="rcd"><div><span class="stars" style="--p:100%" aria-label="Оцінка 5,0 з 5">★★★★★</span><p>“Прийшла «підколоти щось», а лікар чесно сказала, що спершу потрібен догляд. Через два місяці шкіра виглядає краще, ніж після будь-яких уколів.”</p></div><div class="rau"><span class="rav ph"><img width="80" height="80" alt="Світлана, клієнтка ALMA" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_160,c_limit/v1794406395/image.png_31ed17af_2K.webp"></span><div><b>Марина</b><span>Біоревіталізація</span></div></div></article>
+  <article class="rcd"><div><span class="stars" style="--p:98%" aria-label="Оцінка 4,9 з 5">★★★★★</span><p>“Програма для тіла: вісім сеансів, заміри на початку й у кінці. Вперше бачу цифри, а не обіцянки.”</p></div><div class="rau"><span class="rav ph"><img width="80" height="80" alt="Ірина, клієнтка ALMA" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_160,c_limit/v1794406400/image.png_74ac73ac_2K.webp"></span><div><b>Ірина</b><span>Ендосфера</span></div></div></article>
+  <article class="rcd"><div><span class="stars" style="--p:96%" aria-label="Оцінка 4,8 з 5">★★★★★</span><p>“Було страшно робити ботокс уперше. Результат такий, що колеги питають, чи я відпочивав.”</p></div><div class="rau"><span class="rav ph"><img width="80" height="80" alt="Андрій, клієнт ALMA" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_160,c_limit/v1794406395/image.png_c7bfb3e7_2K.webp"></span><div><b>Андрій</b><span>Ботулінотерапія</span></div></div></article>
+  <article class="rcd"><div><span class="stars" style="--p:98%" aria-label="Оцінка 4,9 з 5">★★★★★</span><p>“Діагностика на першому візиті все пояснила. Мені не нав’язали жодної зайвої процедури.”</p></div><div class="rau"><span class="rav ph"><img width="80" height="80" alt="Олена, клієнтка ALMA" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_160,c_limit/v1794406400/image.png_c7afbb90_2K.webp"></span><div><b>Олена</b><span>Діагностика шкіри</span></div></div></article>
+  <article class="rcd"><div><span class="stars" style="--p:94%" aria-label="Оцінка 4,7 з 5">★★★★★</span><p>“Ендосфера та масаж: через місяць одяг сидить інакше. Дуже дбайлива команда.”</p></div><div class="rau"><span class="rav ph"><img width="80" height="80" alt="Марина, клієнтка ALMA" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_160,c_limit/v1794406401/image.png_e44466a8_2K.webp"></span><div><b>Світлана</b><span>Ендосфера та масаж</span></div></div></article>
+  <div class="rp rp2 ph"><img width="1200" height="900" alt="Клієнтка ALMA після курсу догляду" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406395/image.png_15dedb2b_2K_1.webp" srcset="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_480,c_limit/v1794406395/image.png_15dedb2b_2K_1.webp 480w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406395/image.png_15dedb2b_2K_1.webp 800w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1200,c_limit/v1794406395/image.png_15dedb2b_2K_1.webp 1200w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1600,c_limit/v1794406395/image.png_15dedb2b_2K_1.webp 1600w" sizes="(max-width:767px) 100vw, (max-width:1280px) 60vw, 50vw"></div>
+ </div>
+</section>
+
+<section id="insta" class="wrap igp"><div class="igp-s"><div class="ig-w">
+  <h2 class="ig-t">Будьте на зв’язку</h2>
+  <div class="ig-l ph"><img width="1200" height="900" alt="Фото з Instagram клініки ALMA" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794407339/image.png_860dec58_2K.webp" srcset="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_480,c_limit/v1794407339/image.png_860dec58_2K.webp 480w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794407339/image.png_860dec58_2K.webp 800w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1200,c_limit/v1794407339/image.png_860dec58_2K.webp 1200w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1600,c_limit/v1794407339/image.png_860dec58_2K.webp 1600w" sizes="(max-width:767px) 100vw, (max-width:1280px) 60vw, 50vw"></div>
+  <div class="ig-m ph"><img width="1200" height="900" alt="Портрет клієнтки з Instagram клініки ALMA" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406395/image.png_fe238e32_2K.webp" srcset="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_480,c_limit/v1794406395/image.png_fe238e32_2K.webp 480w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406395/image.png_fe238e32_2K.webp 800w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1200,c_limit/v1794406395/image.png_fe238e32_2K.webp 1200w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1600,c_limit/v1794406395/image.png_fe238e32_2K.webp 1600w" sizes="(max-width:767px) 100vw, (max-width:1280px) 60vw, 50vw"></div>
+  <div class="ig-r ph"><img width="1200" height="900" alt="Фото з Instagram клініки ALMA" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406395/image.png_b106a162_2K.webp" srcset="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_480,c_limit/v1794406395/image.png_b106a162_2K.webp 480w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406395/image.png_b106a162_2K.webp 800w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1200,c_limit/v1794406395/image.png_b106a162_2K.webp 1200w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_1600,c_limit/v1794406395/image.png_b106a162_2K.webp 1600w" sizes="(max-width:767px) 100vw, (max-width:1280px) 60vw, 50vw"></div>
+  <p class="ig-p">Поради з догляду, новини клініки та життя команди ALMA.</p>
+  <p class="ig-s"><em>в Instagram</em></p>
+  <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">@alma.clinic<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+ </div></div></section>
+
+</main>
+<footer class="ft">
+ <div class="ft-in">
+  <div class="f-wm" aria-hidden="true"><span>A</span><span>L</span><span>M</span><span>A</span></div>
+  <div class="f-cols">
+   <div class="fc fc-c"><span class="fk">Контакти</span><p>Київ, вул. Хрещатик, 1</p><p>Пн–Сб 9:00–20:00</p><a href="tel:+380440000000">+380 44 000 00 00</a><a href="mailto:hello@alma.clinic">hello@alma.clinic</a><div class="soc"><a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a><a href="https://t.me/" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M21 4L3 11l6 2.5L11 20l3-4 5 3.5z"/></svg></a><a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a></div></div>
+   <nav class="fc"><span class="fk">Послуги</span><a href="services.html#inj">Ін’єкційна косметологія</a><a href="services.html#app">Апаратна косметологія</a><a href="services.html#face">Догляд за обличчям</a><a href="services.html#body">Догляд за тілом</a></nav>
+   <nav class="fc"><span class="fk">Клініка</span><a href="index.html#intro">Про нас</a><a href="index.html#doctors">Лікарі</a><a href="index.html#results">Результати</a><a href="#reviews">Відгуки</a><a href="#faq">Питання</a></nav>
+   <nav class="fc"><span class="fk">Клієнтам</span><a href="index.html#book">Запис на консультацію</a><a href="#faq">Підготовка до процедур</a><a href="#faq">Протипоказання</a><a href="#" data-pop="privacy">Політика конфіденційності</a></nav>
+   <div class="fc"><span class="fk">Підписатися на розсилку</span><form class="nl" onsubmit="event.preventDefault();this.reset();this.parentNode.querySelector('.ft-n').textContent='Дякуємо за підписку!'"><input type="email" required placeholder="Ваш e-mail" aria-label="E-mail"><button class="arw" type="submit" aria-label="Підписатися"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form><p class="f-h">Поради з догляду та новини клініки раз на місяць. Без спаму.</p><p class="ft-n"></p></div>
+  </div>
+  <div class="ft-l"><span>© 2018–2026 ALMA. Ліцензія МОЗ України (макет). Інформація на сайті не є медичною консультацією.</span><span><a href="#" data-pop="offer">Договір оферти</a><a href="#" data-pop="privacy">Політика конфіденційності</a></span></div>
+ </div>
+</footer>
+<div class="bkm" id="bkm" aria-hidden="true"><div class="bkm-b" id="bkmb"></div><div class="bkm-p" role="dialog" aria-modal="true" aria-labelledby="bkm-t"><button class="bkm-x" id="bkmx" type="button" aria-label="Закрити"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></button><div class="bkm-i"><img width="800" height="1000" alt="" src="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406395/image.png_349ca326_2K.webp" srcset="https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_480,c_limit/v1794406395/image.png_349ca326_2K.webp 480w, https://res.cloudinary.com/copx7prg/image/upload/q_auto,w_800,c_limit/v1794406395/image.png_349ca326_2K.webp 800w" sizes="(max-width:760px) 100vw, 440px" decoding="async"><p><b>ALMA</b><span>Київ, вул. Хрещатик, 1</span></p></div><div class="bkm-f"><h3 id="bkm-t">Запишіться <em>на консультацію</em></h3><p class="lead">Залиште контакти, і ми передзвонимо та підберемо зручний час.</p><form id="bkf" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="booking"><input class="hp" name="bot-field" tabindex="-1" autocomplete="off" aria-hidden="true"><input required name="name" placeholder="Ім’я" aria-label="Ім’я" autocomplete="name"><input required type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" autocomplete="tel"><select name="interest" aria-label="Що цікавить"><option>Обличчя</option><option>Тіло</option><option>Не знаю, потрібна консультація</option></select><label class="bkm-c"><input required type="checkbox" name="consent"><span>Погоджуюсь з <a href="#" data-pop="privacy">політикою конфіденційності</a></span></label><button class="btn" type="submit">Записатися<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></button><p class="bkm-s" id="bkms" role="status"></p></form></div></div></div>
+<div class="pop" id="pop" aria-hidden="true"><div class="pop-b" id="popb"></div><div class="pop-p" role="dialog" aria-modal="true" aria-labelledby="pop-t"><button class="pop-x" id="popx" type="button" aria-label="Закрити"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19"/></svg></button><h3 id="pop-t"></h3><div id="pop-c"></div></div></div>
+<script>
+const b=document.getElementById('burger'),mo=document.getElementById('mo');
+const mset=o=>{mo.classList.toggle('open',o);mo.setAttribute('aria-hidden',!o);b.setAttribute('aria-expanded',o);document.body.classList.toggle('mo-open',o);if(o){const f=mo.querySelector('.mo-l a');f&&f.focus({preventScroll:true})}else b.focus({preventScroll:true})};
+b.onclick=()=>mset(true);document.getElementById('mox').onclick=()=>mset(false);
+mo.querySelectorAll('.mo-l a,.mo-t .logo').forEach(a=>a.addEventListener('click',()=>mset(false)));
+mo.addEventListener('wheel',e=>e.stopPropagation(),{passive:true});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&mo.classList.contains('open'))mset(false)});
+document.querySelectorAll('.faq details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)document.querySelectorAll('.faq details').forEach(o=>{if(o!==d)o.open=false})}));
+(function(){const sec=document.getElementById('insta');if(!sec||!sec.classList.contains('igp'))return;const st=sec.querySelector('.igp-s'),L=sec.querySelector('.ig-l'),R=sec.querySelector('.ig-r');let q=0;
+const mq=matchMedia('(min-width:1025px) and (prefers-reduced-motion:no-preference)');
+const ez=t=>1-Math.pow(1-t,4),cl=t=>Math.max(0,Math.min(1,t));let ca=1,cb=1,ta=1,tb=1,run=0;
+const calc=()=>{if(!mq.matches){L.style.transform=R.style.transform='';ca=cb=ta=tb=1;return false}const H=st.clientHeight,r=sec.getBoundingClientRect(),V=innerHeight,s=cl((V*.95-r.top)/(V*.95+(r.height-H)*.4));ta=1-ez(cl(s/.7));tb=1-ez(cl((s-.12)/.7));return true};
+const draw=()=>{const H=st.clientHeight;L.style.transform='translate3d(0,'+(ca*H*.75).toFixed(1)+'px,0)';R.style.transform='translate3d(0,'+(cb*H*.9).toFixed(1)+'px,0)'};
+const tick=()=>{q=0;if(!calc()){run=0;return}ca+=(ta-ca)*.14;cb+=(tb-cb)*.14;draw();if(Math.abs(ta-ca)>.001||Math.abs(tb-cb)>.001){q=1;requestAnimationFrame(tick)}else{ca=ta;cb=tb;draw()}};
+const rq=()=>{if(!q){q=1;requestAnimationFrame(tick)}};addEventListener('scroll',rq,{passive:true});addEventListener('resize',rq);mq.addEventListener&&mq.addEventListener('change',rq);if(calc()){ca=ta;cb=tb;draw()}})();
+(function(){const T={"privacy": ["Політика конфіденційності", [["1. Загальні положення", "Ця політика пояснює, як клініка ALMA (далі — «Клініка») збирає, використовує та захищає персональні дані відвідувачів сайту та пацієнтів. Користуючись сайтом і надсилаючи форму запису, ви погоджуєтеся з умовами цієї політики."], ["2. Які дані ми збираємо", "Ми збираємо лише ті дані, які ви надаєте самі: ім’я, номер телефону, адресу електронної пошти та тип послуги, що вас цікавить. Також сайт автоматично отримує технічні дані: тип пристрою, браузер, мову та сторінки, які ви відвідали."], ["3. Для чого ми їх використовуємо", "Щоб зв’язатися з вами щодо запису на консультацію, підтвердити або перенести візит, надіслати нагадування, відповісти на запитання та покращити роботу сайту. Розсилку з порадами та новинами ми надсилаємо лише тим, хто підписався."], ["4. Медичні дані", "Дані про стан здоров’я, які ви повідомляєте лікарю під час консультації, є лікарською таємницею. Вони не публікуються на сайті й не передаються третім особам, окрім випадків, передбачених законодавством України."], ["5. Правова основа", "Обробка даних здійснюється відповідно до Закону України «Про захист персональних даних» на підставі вашої згоди, яку ви надаєте під час заповнення форми."], ["6. Зберігання та захист", "Дані зберігаються в захищених системах із обмеженим доступом. Ми зберігаємо їх лише стільки, скільки потрібно для мети обробки, або доки ви не попросите їх видалити."], ["7. Передача третім особам", "Ми не продаємо й не передаємо ваші дані третім особам. Доступ можуть мати лише сервіси, які допомагають нам працювати: онлайн-запис, поштова розсилка та аналітика сайту. Вони зобов’язані дотримуватись конфіденційності."], ["8. Файли cookie", "Сайт може використовувати cookie для коректної роботи та аналітики. Ви можете вимкнути їх у налаштуваннях браузера, але деякі функції сайту можуть працювати гірше."], ["9. Ваші права", "Ви маєте право знати, які дані про вас зберігаються, вимагати їх виправлення чи видалення, відкликати згоду на обробку та відмовитися від розсилки. Для цього напишіть нам на hello@alma.clinic."], ["10. Зміни до політики", "Ми можемо оновлювати цю політику. Актуальна версія завжди доступна на цій сторінці. Остання редакція: листопад 2026 року. Текст є макетом для демонстраційного проєкту."]]], "offer": ["Договір оферти", [["1. Предмет договору", "Цей договір (публічна оферта) визначає умови, на яких клініка ALMA (далі — «Виконавець») надає медичні та косметологічні послуги особі, яка записується на консультацію або процедуру (далі — «Пацієнт»). Запис на консультацію або оплата послуги означає прийняття цих умов."], ["2. Перелік послуг", "Виконавець надає послуги за напрямами: ін’єкційна косметологія, апаратна косметологія, догляд за обличчям і догляд за тілом. Перелік і орієнтовна вартість наведені на сторінці «Наші послуги». Конкретну процедуру визначає лікар після консультації."], ["3. Консультація та діагностика", "Кожна процедура починається з очної консультації та оцінки стану шкіри. Вартість консультації зараховується у вартість першої процедури. Лікар може відмовити в процедурі за наявності медичних протипоказань."], ["4. Вартість і оплата", "Ціни на сайті є орієнтовними й вказані зі словами «від». Остаточну вартість визначає лікар після консультації та погоджує з Пацієнтом до початку процедури. Оплата здійснюється в клініці після надання послуги або за попередньою домовленістю."], ["5. Запис, перенесення та скасування", "Запис здійснюється за телефоном, через форму на сайті або в соціальних мережах. Про скасування чи перенесення візиту просимо повідомляти щонайменше за 24 години, щоб звільнити час для інших пацієнтів."], ["6. Права та обов’язки Пацієнта", "Пацієнт зобов’язаний надати повну й правдиву інформацію про стан здоров’я, алергії та препарати, які приймає, а також дотримуватися рекомендацій лікаря до і після процедури. Пацієнт має право на інформацію про методику, препарати та можливі наслідки."], ["7. Права та обов’язки Виконавця", "Виконавець надає послуги якісно та з дотриманням медичних стандартів, використовує сертифіковані препарати й обладнання, зберігає лікарську таємницю та інформує Пацієнта про результати діагностики."], ["8. Індивідуальний результат", "Результат процедур залежить від особливостей організму. Виконавець не гарантує однакового результату для різних пацієнтів, але гарантує дотримання протоколів і стандартів безпеки."], ["9. Відповідальність", "Сторони несуть відповідальність відповідно до чинного законодавства України. Виконавець не відповідає за наслідки, що виникли через приховування Пацієнтом важливої інформації або недотримання рекомендацій лікаря."], ["10. Персональні дані", "Обробка персональних даних Пацієнта здійснюється відповідно до Політики конфіденційності, розміщеної на сайті."], ["11. Заключні положення", "Договір діє безстроково. Виконавець може змінювати його умови, розміщуючи нову редакцію на сайті. Контакти: Київ, вул. Хрещатик, 1; +380 44 000 00 00; hello@alma.clinic. Текст є макетом для демонстраційного проєкту."]]]},pop=document.getElementById('pop');if(!pop)return;const tt=document.getElementById('pop-t'),cc=document.getElementById('pop-c');
+const set=o=>{pop.classList.toggle('open',o);pop.setAttribute('aria-hidden',!o);document.body.classList.toggle('pop-open',o)};
+document.addEventListener('click',e=>{const a=e.target.closest('[data-pop]');if(!a)return;e.preventDefault();e.stopPropagation();const d=T[a.dataset.pop];tt.textContent=d[0];cc.innerHTML=d[1].map(x=>'<h4>'+x[0]+'</h4><p>'+x[1]+'</p>').join('');window.nbsp&&window.nbsp(cc);pop.querySelector('.pop-p').scrollTop=0;set(true);document.getElementById('popx').focus({preventScroll:true})},true);
+document.getElementById('popx').onclick=()=>set(false);document.getElementById('popb').onclick=()=>set(false);
+pop.addEventListener('wheel',e=>e.stopPropagation(),{passive:true});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&pop.classList.contains('open'))set(false)});})();
+(function(){const re1=/(^|[\s(«“"—–-])([A-Za-zА-Яа-яЇїІіЄєҐґ’'ʼ]{1,3})\s+/g,re2=/(\d)\s(?=\d{3}\b)/g,re3=/\s+(—|–)/g;
+const fix=t=>{let v=t.nodeValue;if(!/\S/.test(v))return;let n=v.replace(re1,(m,a,w)=>a+w+'\u00A0').replace(re1,(m,a,w)=>a+w+'\u00A0').replace(re2,'$1\u00A0').replace(re3,'\u00A0$1');if(n!==v)t.nodeValue=n};
+const run=root=>{const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:n=>/^(SCRIPT|STYLE|VIDEO)$/.test(n.parentNode.nodeName)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});const a=[];while(w.nextNode())a.push(w.currentNode);a.forEach(fix)};
+window.nbsp=run;run(document.body)})();
+(function(){const n=document.querySelector('.nav');if(!n)return;const f=()=>n.classList.toggle('lt',scrollY>20);addEventListener('scroll',f,{passive:true});f()})();
+</script>
+
+<script>
+/* FoldText: paper / hinge top / chars / scroll / hoverRefold (vanilla port, no deps) */
+(function(){
+var wm=document.querySelector('.f-wm');if(!wm)return;
+if(matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+var FOLD=92,DUR=.65,STAG=.12,CREASE=.55,RADIUS=260,REFOLD=45;
+var ps=[].slice.call(wm.children).map(function(s){var t=s.textContent;s.innerHTML='<span class="fp" data-t="'+t+'">'+t+'</span>';return{el:s.firstChild,box:s,t:0,r:0,aim:0}});
+var cl=function(v,a,b){return Math.min(b,Math.max(a,v))};
+function render(){ps.forEach(function(p){var pr=1-Math.pow(1-p.t,3);var tilt=p.r*REFOLD;
+p.el.style.transform='rotateX('+(-1*((1-pr)*FOLD+tilt))+'deg)';
+p.el.style.opacity=cl(pr,0,1);
+p.el.style.setProperty('--fc',CREASE*cl(1-pr+tilt/90,0,1))})}
+render();
+var started=false,t0=0;
+function tick(now){var done=true;ps.forEach(function(p,i){p.t=cl((now-t0)/1000-i*STAG,0,DUR)/DUR;if(p.t<1)done=false});render();if(!done)requestAnimationFrame(tick)}
+function start(){if(started)return;started=true;ps.forEach(function(p){p.t=0});render();t0=performance.now();requestAnimationFrame(tick)}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){start();io.disconnect()}},{threshold:.35});io.observe(wm)}else start();
+/* hover refold */
+var ptr=null,relaxing=false,last=0;
+function relax(now){var dt=Math.min(now-last,64)/1000;last=now;var mv=false;
+ps.forEach(function(p){var rate=p.aim>p.r?14:6;p.r+=(p.aim-p.r)*(1-Math.exp(-rate*dt));if(Math.abs(p.aim-p.r)>.001)mv=true;else p.r=p.aim});
+render();if(mv)requestAnimationFrame(relax);else relaxing=false}
+function aim(){var ch=false;ps.forEach(function(p){var v=0;if(ptr&&started){var b=p.box.getBoundingClientRect();var d=Math.hypot(b.left+b.width/2-ptr.x,b.top+b.height/2-ptr.y)/RADIUS;if(d<1)v=1-d*d*(3-2*d)}
+if(v!==p.aim)ch=true;p.aim=v});
+if(ch&&!relaxing){relaxing=true;last=performance.now();requestAnimationFrame(relax)}}
+if(matchMedia('(hover:hover)').matches){
+addEventListener('pointermove',function(e){ptr={x:e.clientX,y:e.clientY};aim()},{passive:true});
+addEventListener('scroll',function(){if(ptr)aim()},{passive:true});
+document.documentElement.addEventListener('pointerleave',function(){ptr=null;aim()})}
+})();
+</script>
+
+<script>
+/* reviews pager on mobile: 2 cards per page, arrow like in the team block */
+(function(){var rg=document.querySelector('#reviews .rg');if(!rg)return;
+var cards=[].slice.call(rg.querySelectorAll('.rcd'));if(!cards.length)return;
+var nav=document.createElement('div');nav.className='rnav';nav.innerHTML='<span class="rct">1/1</span><button class="arw rnx" type="button" aria-label="Наступні відгуки"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>';
+rg.parentNode.insertBefore(nav,rg.nextSibling);
+var mq=matchMedia('(max-width:767px)'),per=2,pg=0,pages=Math.ceil(cards.length/per),ct=nav.querySelector('.rct');
+function show(){cards.forEach(function(c,i){c.classList.toggle('off',mq.matches&&Math.floor(i/per)!==pg)});ct.textContent=(pg+1)+'/'+pages}
+nav.querySelector('.rnx').addEventListener('click',function(){pg=(pg+1)%pages;show()});
+(mq.addEventListener?mq.addEventListener('change',show):mq.addListener(show));show()})();
+</script>
+
+<script>
+(function(){const m=document.getElementById('bkm');if(!m)return;const f=document.getElementById('bkf'),s=document.getElementById('bkms');let last=null;
+const set=o=>{m.classList.toggle('open',o);m.setAttribute('aria-hidden',!o);document.body.classList.toggle('bkm-open',o);document.body.classList.toggle('pop-open',o)};
+const open=()=>{last=document.activeElement;s.textContent='';set(true);window.__almaFixW&&window.__almaFixW();setTimeout(()=>{const i=f.querySelector('input[name=name]');i&&i.focus({preventScroll:true})},350)};
+const close=()=>{set(false);last&&last.focus&&last.focus({preventScroll:true})};
+document.addEventListener('click',e=>{const a=e.target.closest('[data-book]');if(!a)return;e.preventDefault();open()});
+document.getElementById('bkmx').onclick=close;document.getElementById('bkmb').onclick=close;
+m.addEventListener('wheel',e=>e.stopPropagation(),{passive:true});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&m.classList.contains('open')&&!document.querySelector('#pop.open'))close()});
+f.addEventListener('submit',e=>{e.preventDefault();const en=document.documentElement.lang==='en',b=f.querySelector('.btn');b.disabled=true;
+ fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(f)).toString()}).then(r=>{if(!r.ok)throw 0;s.textContent=en?'Thank you! We will call you within 30 minutes.':'Дякуємо! Ми зателефонуємо вам протягом 30 хвилин.';f.reset();setTimeout(close,2600)}).catch(()=>{s.textContent=en?'Could not send. Please call +380 44 000 00 00.':'Не вдалося надіслати. Зателефонуйте нам: +380 44 000 00 00.'}).then(()=>{b.disabled=false})});
+})();
+</script>
+<script>
+/* UA/EN i18n */
+(function(){
+var DICT={"Мова / Language": "Language", "Записатися": "Book", "Меню": "Menu", "Закрити": "Close", "Головна": "Home", "Послуги": "Services", "Лікарі": "Doctors", "Результати": "Results", "Відгуки": "Reviews", "Питання": "FAQ", "Контакти": "Contact", "Політика конфіденційності": "Privacy policy", "Договір оферти": "Terms of service", "Портрет жінки з доглянутою шкірою": "Portrait of a woman with well-kept skin", "Краса, що": "Beauty that", "виглядає як ти": "looks like you", "Почніть із розуміння своєї шкіри. Лікарі ALMA проведуть діагностику, визначать її потреби та підберуть індивідуальний план догляду без зайвих процедур.": "Start by understanding your skin. ALMA doctors will run a diagnostic, identify its needs and build an individual care plan with no unnecessary procedures.", "Записатися на діагностику": "Book a diagnostic", "років": "years", "досвіду лікарів": "of doctors’ experience", "процедур для обличчя й тіла": "face and body procedures", "хв": "min", "персональної діагностики": "of personal diagnostics", "Тон шкіри<small>/ діагностика</small>": "Skin tone<small>/ diagnostics</small>", "Текстура<small>/ діагностика</small>": "Texture<small>/ diagnostics</small>", "Зволоження<small>/ діагностика</small>": "Hydration<small>/ diagnostics</small>", "Наш підхід": "Our approach", "Природний результат,<br>медичний <em>підхід</em>": "Natural results,<br>a medical <em>approach</em>", "Про ALMA": "About ALMA", "Апаратні<br>методики": "Device-based<br>methods", "Ваша шкіра": "Your skin", "<b class=\"ac\">заслуговує</b> на": "<b class=\"ac\">deserves</b> the", "турботу лікарів": "care of doctors", "ALMA — камерна клініка естетичної медицини та догляду за тілом у Києві. Ми починаємо з діагностики, а не з прайсу.": "ALMA is a boutique clinic of aesthetic medicine and body care in Kyiv. We start with diagnostics, not with a price list.", "Лікарі-дерматологи та косметологи ведуть кожного клієнта від першої консультації до результату.": "Dermatologists and cosmetologists guide every client from the first consultation to the result.", "Записатися<br>на консультацію": "Book<br>a consultation", "Спочатку: показати фото": "First: show photo", "Спочатку": "First", "діагностика: показати фото": "diagnostics: show photo", "діагностика,": "diagnostics,", "потім: показати фото": "then: show photo", "потім": "then", "план: показати фото": "plan: show photo", "план": "plan", "Лікарі-дерматологи<br>та косметологи": "Dermatologists<br>and cosmetologists", "<em>Комплекс послуг</em><br>для тонусу й сяйва": "<em>A full range of services</em><br>for tone and glow", "Чотири напрями, один план. Лікар поєднує їх так, щоб результат був помітним і природним.": "Four directions, one plan. The doctor combines them so that the result is visible and natural.", "Ін’єкції": "Injections", "Ін’єкційна косметологія": "Injectable cosmetology", "Тонус, об’єм і сяйво без ефекту маски. Лікар підбирає препарат і дозування після діагностики.": "Tone, volume and glow without a mask-like effect. The doctor selects the product and dosage after diagnostics.", "Ботулінотерапія · філери · біоревіталізація · полінуклеотиди": "Botulinum therapy · fillers · biorevitalisation · polynucleotides", "Докладніше": "Learn more", "(Тонус і об’єм)": "(Tone and volume)", "Апарати": "Devices", "Апаратна косметологія": "Device-based cosmetology", "Ліфтинг та оновлення шкіри без реабілітації. Методику обираємо за станом шкіри.": "Lifting and skin renewal with no downtime. We choose the method according to the condition of your skin.", "Лазер · RF-ліфтинг · мікронідлінг": "Laser · RF lifting · microneedling", "(Ліфтинг без реабілітації)": "(Lifting with no downtime)", "Обличчя": "Face", "Догляд за обличчям": "Facial care", "Базова турбота, яка дає видимий результат. Основа для будь-якого подальшого плану.": "Basic care that gives a visible result. The foundation for any further plan.", "Чистки · пілінги · маски · масаж": "Cleansing · peels · masks · massage", "(Основа догляду)": "(The base of care)", "Тіло": "Body", "Догляд за тілом": "Body care", "Контур, тонус і гладка шкіра без крайнощів. Курсові програми з вимірами до і після.": "Contour, tone and smooth skin without extremes. Course programmes with before-and-after measurements.", "Ендосфера · кавітація · обгортання · пілінги для тіла": "Endosphere · cavitation · wraps · body peels", "(Контур і тонус)": "(Contour and tone)", "Технології ALMA": "ALMA technologies", "Технології": "Technology", "Методики, які <em>працюють</em><br>на ваш результат": "Methods that <em>work</em><br>for your result", "Препарати та методики ALMA": "ALMA products and methods", "Біоревіталізація<i></i>Полінуклеотиди<i></i>PRP-терапія<i></i>Dermapen<i></i>RF-ліфтинг<i></i>SMAS-ліфтинг<i></i>Ендосфера<i></i>LPG-масаж<i></i>STYX<i></i>": "Biorevitalisation<i></i>Polynucleotides<i></i>PRP therapy<i></i>Dermapen<i></i>RF lifting<i></i>SMAS lifting<i></i>Endosphere<i></i>LPG massage<i></i>STYX<i></i>", "Команда": "Team", "Наша команда <em>кваліфікованих лікарів</em> віддана тому, щоб ви отримали <em>персональний, якісний</em> догляд.": "Our team of <em>qualified doctors</em> is committed to making sure you receive <em>personalised, high-quality</em> care.", "<em>Анна</em><br>Павлова": "<em>Anna</em><br>Pavlova", "Дерматолог, засновниця": "Dermatologist, founder", "(Спеціалізація)": "(Specialisation)", "Діагностика шкіри": "Skin diagnostics", "Персональні плани": "Personal plans", "Лікар-дерматолог і засновниця ALMA. Починає з діагностики шкіри та складає персональний план без зайвих процедур.": "Dermatologist and founder of ALMA. She starts with skin diagnostics and builds a personal plan without unnecessary procedures.", "<em>Олена</em><br>Коваль": "<em>Olena</em><br>Koval", "Лікар-косметолог": "Cosmetologist", "Біоревіталізація": "Biorevitalisation", "Веде апаратні програми та догляд за обличчям і супроводжує клієнтів між процедурами, щоб результат тримався.": "Leads device-based programmes and facial care, and supports clients between procedures so the result lasts.", "<em>Марія</em><br>Литвин": "<em>Maria</em><br>Lytvyn", "Експерт із догляду за тілом": "Body care expert", "Ендосфера": "Endosphere", "Кавітація": "Cavitation", "Обгортання": "Wraps", "Веде курсові програми для тіла з вимірами на старті й у фіналі: контур, тонус і гладка шкіра без крайнощів.": "Leads course programmes for the body with measurements at the start and at the end: contour, tone and smooth skin without extremes.", "Наступний лікар": "Next doctor", "Результати, які <em>можна показати</em>": "Results <em>you can show</em>", "Біоревіталізація, 3 сеанси, 6 тижнів. Шкіра рівніша, зволоженіша, без ефекту «зробленого» обличчя.": "Biorevitalisation, 3 sessions, 6 weeks. Skin is more even and more hydrated, without a “done” look.", "Перетягніть повзунок, щоб порівняти. Результат індивідуальний, фото публікуються за згодою пацієнтів.": "Drag the slider to compare. Results are individual; photos are published with patients’ consent.", "До": "Before", "Після": "After", "Порівняння до і після": "Before and after comparison", "За кожним результатом <em>є історія</em>": "Behind every result <em>there is a story</em>", "Комфорт. Довіра. Результат. Про це говорять наші клієнти, і ми раді поділитися їхніми словами.": "Comfort. Trust. Results. This is what our clients say, and we are happy to share their words.", "Оцінка 5,0 з 5": "Rating 5.0 out of 5", "“Прийшла «підколоти щось», а лікар чесно сказала, що спершу потрібен догляд. Через два місяці шкіра виглядає краще, ніж після будь-яких уколів.”": "“I came to get ‘a little something done’, and the doctor honestly said that I needed skincare first. Two months later my skin looks better than after any injections.”", "Марина": "Maryna", "Оцінка 4,9 з 5": "Rating 4.9 out of 5", "“Програма для тіла: вісім сеансів, заміри на початку й у кінці. Вперше бачу цифри, а не обіцянки.”": "“A body programme: eight sessions, measurements at the start and at the end. For the first time I see numbers, not promises.”", "Ірина": "Iryna", "Оцінка 4,8 з 5": "Rating 4.8 out of 5", "“Було страшно робити ботокс уперше. Результат такий, що колеги питають, чи я відпочивав.”": "“I was scared to try Botox for the first time. The result is such that my colleagues ask whether I’ve been on holiday.”", "Андрій": "Andrii", "Ботулінотерапія": "Botulinum therapy", "“Діагностика на першому візиті все пояснила. Мені не нав’язали жодної зайвої процедури.”": "“The diagnostic at the first visit explained everything. They didn’t push a single unnecessary procedure on me.”", "Олена": "Olena", "Оцінка 4,7 з 5": "Rating 4.7 out of 5", "“Ендосфера та масаж: через місяць одяг сидить інакше. Дуже дбайлива команда.”": "“Endosphere and massage: after a month my clothes fit differently. A very caring team.”", "Світлана": "Svitlana", "Ендосфера та масаж": "Endosphere and massage", "Наступні відгуки": "Next reviews", "Часті <em>питання</em>": "Frequently asked <em>questions</em>", "Чи боляче?": "Does it hurt?", "Використовуємо анестезію та тонкі голки. Більшість клієнтів описують відчуття як легкий дискомфорт.": "We use anaesthesia and fine needles. Most clients describe the sensation as mild discomfort.", "Коли буде видно результат?": "When will I see the result?", "Залежить від процедури: від одного дня до 3–4 тижнів. Лікар назве терміни на консультації.": "It depends on the procedure: from one day to 3–4 weeks. The doctor will give you the timeline at the consultation.", "Скільки сеансів потрібно для тіла?": "How many sessions does the body need?", "Зазвичай курс із 6–10 сеансів. Це корекція контуру, а не засіб для схуднення.": "Usually a course of 6–10 sessions. This is contour correction, not a weight-loss tool.", "Які є протипоказання?": "What are the contraindications?", "Вагітність, онкологічні захворювання, гострі запалення та інші. Лікар перевірить їх перед початком.": "Pregnancy, oncological diseases, acute inflammation and others. The doctor will check them before starting.", "Скільки триває перша консультація?": "How long does the first consultation take?", "Перша консультація триває 30 хвилин, а її вартість зараховується в першу процедуру.": "The first consultation takes 30 minutes, and its cost is credited towards the first procedure.", "Будьте на зв’язку": "Stay in touch", "Поради з догляду, новини клініки та життя команди ALMA.": "Skincare tips, clinic news and life behind the scenes at the ALMA team.", "в Instagram": "on Instagram", "Почнемо <em>з розмови</em>": "Let’s start <em>with a conversation</em>", "Залиште контакти, і ми передзвонимо та підберемо зручний час на консультацію.": "Leave your contact details and we will call you back and find a convenient time for a consultation.", "Ім’я": "Name", "Телефон": "Phone", "Що цікавить": "What are you interested in", "Не знаю, потрібна консультація": "Not sure, I need a consultation", "Записатися на консультацію": "Book a consultation", "Київ, вул. Хрещатик, 1": "Kyiv, 1 Khreshchatyk St.", "Пн–Сб 9:00–20:00": "Mon–Sat 9:00–20:00", "Клініка": "Clinic", "Про нас": "About us", "Клієнтам": "For clients", "Запис на консультацію": "Book a consultation", "Підготовка до процедур": "Preparing for procedures", "Протипоказання": "Contraindications", "Підписатися на розсилку": "Subscribe to the newsletter", "Ваш e-mail": "Your e-mail", "Підписатися": "Subscribe", "Поради з догляду та новини клініки раз на місяць. Без спаму.": "Skincare tips and clinic news once a month. No spam.", "© 2018–2026 ALMA. Ліцензія МОЗ України (макет). Інформація на сайті не є медичною консультацією.": "© 2018–2026 ALMA. Ministry of Health of Ukraine licence (mockup). Information on the site is not a medical consultation.", "1. Загальні положення": "1. General provisions", "Ця політика пояснює, як клініка ALMA (далі — «Клініка») збирає, використовує та захищає персональні дані відвідувачів сайту та пацієнтів. Користуючись сайтом і надсилаючи форму запису, ви погоджуєтеся з умовами цієї політики.": "This policy explains how the ALMA clinic (the “Clinic”) collects, uses and protects the personal data of site visitors and patients. By using the site and submitting the booking form, you agree to the terms of this policy.", "2. Які дані ми збираємо": "2. What data we collect", "Ми збираємо лише ті дані, які ви надаєте самі: ім’я, номер телефону, адресу електронної пошти та тип послуги, що вас цікавить. Також сайт автоматично отримує технічні дані: тип пристрою, браузер, мову та сторінки, які ви відвідали.": "We collect only the data you provide yourself: your name, phone number, e-mail address and the type of service you are interested in. The site also automatically receives technical data: device type, browser, language and the pages you visited.", "3. Для чого ми їх використовуємо": "3. What we use it for", "Щоб зв’язатися з вами щодо запису на консультацію, підтвердити або перенести візит, надіслати нагадування, відповісти на запитання та покращити роботу сайту. Розсилку з порадами та новинами ми надсилаємо лише тим, хто підписався.": "To contact you about booking a consultation, confirm or reschedule a visit, send reminders, answer questions and improve the site. We send newsletters with tips and news only to those who have subscribed.", "4. Медичні дані": "4. Medical data", "Дані про стан здоров’я, які ви повідомляєте лікарю під час консультації, є лікарською таємницею. Вони не публікуються на сайті й не передаються третім особам, окрім випадків, передбачених законодавством України.": "Information about your health that you share with the doctor during a consultation is medical confidentiality. It is not published on the site and is not passed to third parties, except in cases provided for by the legislation of Ukraine.", "5. Правова основа": "5. Legal basis", "Обробка даних здійснюється відповідно до Закону України «Про захист персональних даних» на підставі вашої згоди, яку ви надаєте під час заповнення форми.": "Data is processed in accordance with the Law of Ukraine “On Personal Data Protection” on the basis of your consent, which you give when filling in the form.", "6. Зберігання та захист": "6. Storage and protection", "Дані зберігаються в захищених системах із обмеженим доступом. Ми зберігаємо їх лише стільки, скільки потрібно для мети обробки, або доки ви не попросите їх видалити.": "Data is stored in secure systems with restricted access. We keep it only as long as needed for the purpose of processing, or until you ask us to delete it.", "7. Передача третім особам": "7. Disclosure to third parties", "Ми не продаємо й не передаємо ваші дані третім особам. Доступ можуть мати лише сервіси, які допомагають нам працювати: онлайн-запис, поштова розсилка та аналітика сайту. Вони зобов’язані дотримуватись конфіденційності.": "We do not sell or pass your data to third parties. Only services that help us operate may have access: online booking, e-mail newsletters and site analytics. They are obliged to keep it confidential.", "8. Файли cookie": "8. Cookies", "Сайт може використовувати cookie для коректної роботи та аналітики. Ви можете вимкнути їх у налаштуваннях браузера, але деякі функції сайту можуть працювати гірше.": "The site may use cookies for correct operation and analytics. You can disable them in your browser settings, but some features of the site may work less well.", "9. Ваші права": "9. Your rights", "Ви маєте право знати, які дані про вас зберігаються, вимагати їх виправлення чи видалення, відкликати згоду на обробку та відмовитися від розсилки. Для цього напишіть нам на hello@alma.clinic.": "You have the right to know what data about you is stored, to request its correction or deletion, to withdraw your consent to processing and to unsubscribe from the newsletter. To do so, write to us at hello@alma.clinic.", "10. Зміни до політики": "10. Changes to the policy", "Ми можемо оновлювати цю політику. Актуальна версія завжди доступна на цій сторінці. Остання редакція: листопад 2026 року. Текст є макетом для демонстраційного проєкту.": "We may update this policy. The current version is always available on this page. Last revised: November 2026. This text is a mockup for a demonstration project.", "1. Предмет договору": "1. Subject of the agreement", "Цей договір (публічна оферта) визначає умови, на яких клініка ALMA (далі — «Виконавець») надає медичні та косметологічні послуги особі, яка записується на консультацію або процедуру (далі — «Пацієнт»). Запис на консультацію або оплата послуги означає прийняття цих умов.": "This agreement (public offer) sets out the terms on which the ALMA clinic (the “Provider”) provides medical and cosmetology services to a person who books a consultation or procedure (the “Patient”). Booking a consultation or paying for a service means acceptance of these terms.", "2. Перелік послуг": "2. List of services", "Виконавець надає послуги за напрямами: ін’єкційна косметологія, апаратна косметологія, догляд за обличчям і догляд за тілом. Перелік і орієнтовна вартість наведені на сторінці «Наші послуги». Конкретну процедуру визначає лікар після консультації.": "The Provider offers services in the following areas: injectable cosmetology, device-based cosmetology, facial care and body care. The list and approximate prices are given on the “Our services” page. The specific procedure is determined by the doctor after a consultation.", "3. Консультація та діагностика": "3. Consultation and diagnostics", "Кожна процедура починається з очної консультації та оцінки стану шкіри. Вартість консультації зараховується у вартість першої процедури. Лікар може відмовити в процедурі за наявності медичних протипоказань.": "Every procedure begins with an in-person consultation and an assessment of the condition of the skin. The cost of the consultation is credited towards the cost of the first procedure. The doctor may refuse a procedure if there are medical contraindications.", "4. Вартість і оплата": "4. Price and payment", "Ціни на сайті є орієнтовними й вказані зі словами «від». Остаточну вартість визначає лікар після консультації та погоджує з Пацієнтом до початку процедури. Оплата здійснюється в клініці після надання послуги або за попередньою домовленістю.": "Prices on the site are approximate and are marked with the word “from”. The final price is determined by the doctor after the consultation and agreed with the Patient before the procedure begins. Payment is made at the clinic after the service is provided or by prior arrangement.", "5. Запис, перенесення та скасування": "5. Booking, rescheduling and cancellation", "Запис здійснюється за телефоном, через форму на сайті або в соціальних мережах. Про скасування чи перенесення візиту просимо повідомляти щонайменше за 24 години, щоб звільнити час для інших пацієнтів.": "Bookings are made by phone, via the form on the site or on social media. We ask you to notify us of a cancellation or rescheduling at least 24 hours in advance so that we can free up time for other patients.", "6. Права та обов’язки Пацієнта": "6. Rights and obligations of the Patient", "Пацієнт зобов’язаний надати повну й правдиву інформацію про стан здоров’я, алергії та препарати, які приймає, а також дотримуватися рекомендацій лікаря до і після процедури. Пацієнт має право на інформацію про методику, препарати та можливі наслідки.": "The Patient is obliged to provide full and truthful information about their health, allergies and the medicines they take, and to follow the doctor’s recommendations before and after the procedure. The Patient has the right to information about the method, the products and possible consequences.", "7. Права та обов’язки Виконавця": "7. Rights and obligations of the Provider", "Виконавець надає послуги якісно та з дотриманням медичних стандартів, використовує сертифіковані препарати й обладнання, зберігає лікарську таємницю та інформує Пацієнта про результати діагностики.": "The Provider delivers services with high quality and in compliance with medical standards, uses certified products and equipment, keeps medical confidentiality and informs the Patient about the results of diagnostics.", "8. Індивідуальний результат": "8. Individual result", "Результат процедур залежить від особливостей організму. Виконавець не гарантує однакового результату для різних пацієнтів, але гарантує дотримання протоколів і стандартів безпеки.": "The result of procedures depends on the characteristics of the body. The Provider does not guarantee the same result for different patients, but guarantees compliance with protocols and safety standards.", "9. Відповідальність": "9. Liability", "Сторони несуть відповідальність відповідно до чинного законодавства України. Виконавець не відповідає за наслідки, що виникли через приховування Пацієнтом важливої інформації або недотримання рекомендацій лікаря.": "The parties are liable in accordance with the current legislation of Ukraine. The Provider is not responsible for consequences arising from the Patient’s concealment of important information or failure to follow the doctor’s recommendations.", "10. Персональні дані": "10. Personal data", "Обробка персональних даних Пацієнта здійснюється відповідно до Політики конфіденційності, розміщеної на сайті.": "The Patient’s personal data is processed in accordance with the Privacy Policy published on the site.", "11. Заключні положення": "11. Final provisions", "Договір діє безстроково. Виконавець може змінювати його умови, розміщуючи нову редакцію на сайті. Контакти: Київ, вул. Хрещатик, 1; +380 44 000 00 00; hello@alma.clinic. Текст є макетом для демонстраційного проєкту.": "The agreement is valid indefinitely. The Provider may change its terms by publishing a new version on the site. Contacts: Kyiv, 1 Khreshchatyk St.; +380 44 000 00 00; hello@alma.clinic. This text is a mockup for a demonstration project.", "Кавітація + RF, 8 сеансів. Мінус 4 см в об’ємі талії та вирівняний рельєф шкіри.": "Cavitation + RF, 8 sessions. Minus 4 cm in waist volume and a smoother skin texture.", "Дякуємо! Ми зателефонуємо вам протягом 30 хвилин.": "Thank you! We will call you within 30 minutes.", "Прайс": "Price list", "Наші<b>послуги</b>": "Our<b>services</b>", "Комплекс послуг для здоров’я, тонусу й сяйва. Ціни орієнтовні, точну вартість лікар визначає після консультації.": "A range of services for health, tone and glow. Prices are approximate; the exact cost is determined by the doctor after a consultation.", "Делікатна корекція та відновлення якості шкіри за допомогою сучасних ін’єкційних методик. Підбираємо препарати й дозування індивідуально, враховуючи особливості обличчя та ваші побажання.": "Gentle correction and restoration of skin quality using modern injectable techniques. We select products and dosage individually, taking into account your facial features and wishes.", "Ботулінотерапія (1 зона)": "Botulinum therapy (1 zone)", "Лоб + міжбрів’я": "Forehead + glabella", "Контурна пластика губ (1 мл)": "Lip contouring (1 ml)", "Контурна пластика обличчя (1 мл)": "Facial contouring (1 ml)", "Мезотерапія обличчя": "Facial mesotherapy", "Полінуклеотиди": "Polynucleotides", "PRP-терапія (плазмотерапія)": "PRP therapy (plasmotherapy)", "Інноваційні технології для покращення якості шкіри, її пружності та чіткості контурів. Поєднуємо ефективні апаратні методики з індивідуальним підбором параметрів відповідно до потреб шкіри.": "Innovative technologies to improve skin quality, firmness and the definition of contours. We combine effective device-based methods with individually selected parameters to suit your skin’s needs.", "RF-ліфтинг обличчя": "Facial RF lifting", "Мікрострумова терапія": "Microcurrent therapy", "Мікронідлінг (Dermapen)": "Microneedling (Dermapen)", "Мікроголковий RF-ліфтинг": "Microneedle RF lifting", "SMAS-ліфтинг обличчя": "Facial SMAS lifting", "IPL-фотоомолодження": "IPL photorejuvenation", "Лазерний карбоновий пілінг": "Laser carbon peel", "Безін’єкційна мезотерапія": "Needle-free mesotherapy", "Професійний догляд, спрямований на очищення, зволоження та відновлення природного балансу шкіри. Підбираємо процедури відповідно до її типу, стану та індивідуальних потреб.": "Professional care aimed at cleansing, hydrating and restoring the skin’s natural balance. We choose procedures according to its type, condition and individual needs.", "Ультразвукова чистка": "Ultrasonic cleansing", "Комбінована чистка": "Combined cleansing", "Атравматична чистка": "Atraumatic cleansing", "Хімічний пілінг": "Chemical peel", "Гідропілінг обличчя": "Facial hydro-peeling", "Карбокситерапія": "Carboxytherapy", "Доглядова процедура за типом шкіри": "Care procedure for your skin type", "Масаж обличчя": "Facial massage", "Комплексний підхід до краси та комфорту вашого тіла. Апаратні методики й професійні доглядові процедури допомагають працювати з тонусом шкіри, її рельєфом та контурами тіла.": "A comprehensive approach to the beauty and comfort of your body. Device-based methods and professional care procedures help work with skin tone, texture and body contours.", "Ендосфера-терапія": "Endosphere therapy", "LPG-масаж": "LPG massage", "Пресотерапія": "Pressotherapy", "Ультразвукова кавітація (1 зона)": "Ultrasonic cavitation (1 zone)", "RF-ліфтинг тіла (1 зона)": "Body RF lifting (1 zone)", "Вакуумно-роликовий масаж": "Vacuum-roller massage", "Професійне обгортання STYX": "Professional STYX wrap", "Пілінг тіла": "Body peel", "<small>від</small> 2 800 <small>грн</small>": "<small>from</small> 2,800 <small>UAH</small>", "<small>від</small> 5 000 <small>грн</small>": "<small>from</small> 5,000 <small>UAH</small>", "<small>від</small> 4 500 <small>грн</small>": "<small>from</small> 4,500 <small>UAH</small>", "<small>від</small> 3 000 <small>грн</small>": "<small>from</small> 3,000 <small>UAH</small>", "<small>від</small> 3 300 <small>грн</small>": "<small>from</small> 3,300 <small>UAH</small>", "<small>від</small> 2 500 <small>грн</small>": "<small>from</small> 2,500 <small>UAH</small>", "<small>від</small> 2 100 <small>грн</small>": "<small>from</small> 2,100 <small>UAH</small>", "<small>від</small> 1 900 <small>грн</small>": "<small>from</small> 1,900 <small>UAH</small>", "<small>від</small> 6 350 <small>грн</small>": "<small>from</small> 6,350 <small>UAH</small>", "<small>від</small> 10 500 <small>грн</small>": "<small>from</small> 10,500 <small>UAH</small>", "<small>від</small> 500 <small>грн</small>": "<small>from</small> 500 <small>UAH</small>", "<small>від</small> 3 050 <small>грн</small>": "<small>from</small> 3,050 <small>UAH</small>", "<small>від</small> 1 200 <small>грн</small>": "<small>from</small> 1,200 <small>UAH</small>", "<small>від</small> 1 300 <small>грн</small>": "<small>from</small> 1,300 <small>UAH</small>", "<small>від</small> 1 100 <small>грн</small>": "<small>from</small> 1,100 <small>UAH</small>", "<small>від</small> 2 200 <small>грн</small>": "<small>from</small> 2,200 <small>UAH</small>", "<small>від</small> 900 <small>грн</small>": "<small>from</small> 900 <small>UAH</small>", "<small>від</small> 1 450 <small>грн</small>": "<small>from</small> 1,450 <small>UAH</small>", "<small>від</small> 1 000 <small>грн</small>": "<small>from</small> 1,000 <small>UAH</small>", "<small>від</small> 600 <small>грн</small>": "<small>from</small> 600 <small>UAH</small>", "<small>від</small> 400 <small>грн</small>": "<small>from</small> 400 <small>UAH</small>", "<small>від</small> 800 <small>грн</small>": "<small>from</small> 800 <small>UAH</small>", "Дякуємо за підписку!": "Thank you for subscribing!", "Запишіться <em>на консультацію</em>": "Book <em>a consultation</em>", "Залиште контакти, і ми передзвонимо та підберемо зручний час.": "Leave your contacts and we will call you back and find a convenient time.", "Погоджуюсь з": "I agree to the", "політикою конфіденційності": "privacy policy", "__meta": {"title": "Our services — ALMA", "desc": "ALMA clinic services in Kyiv: injectable and device-based cosmetology, facial and body care. Prices and booking a consultation."}};
+var FMT={EM:1,B:1,I:1,STRONG:1,SMALL:1,U:1,BR:1,SUP:1},SKIP={SCRIPT:1,STYLE:1,NOSCRIPT:1,SVG:1,svg:1,TEXTAREA:1,CODE:1};
+var ATTRS=['placeholder','aria-label','alt','title','data-c'];
+var CYR=/[Ѐ-ӿ]/;
+function norm(s){return s.replace(/&nbsp;| | /g,' ').replace(/\s+/g,' ').trim()}
+function fmtOnly(el){var ok=true,hasFmt=false;(function w(n){for(var c=n.firstChild;c;c=c.nextSibling){if(c.nodeType===1){if(!FMT[c.tagName]){ok=false;return}hasFmt=true;if(c.id||c.hasAttribute('tabindex')||c.hasAttribute('role')||c.classList.contains('cnt')){ok=false;return}w(c)}}})(el);return ok&&hasFmt}
+function hasText(el){for(var c=el.firstChild;c;c=c.nextSibling)if(c.nodeType===3&&c.nodeValue.trim())return true;return false}
+function collect(root,out){
+ (function walk(el){
+  if(el.nodeType!==1||SKIP[el.tagName]||SKIP[el.nodeName]||el.hasAttribute&&el.hasAttribute('data-noi18n'))return;
+  ATTRS.forEach(function(a){if(el.hasAttribute(a)){var v=el.getAttribute(a);if(CYR.test(v))out.push({t:'attr',el:el,a:a,key:norm(v)})}});
+  if(el.tagName==='IMG'||el.tagName==='VIDEO')return;
+  if(hasText(el)&&fmtOnly(el)){var k=norm(el.innerHTML);if(CYR.test(k)){out.push({t:'html',el:el,key:k});return}}
+  for(var c=el.firstChild;c;c=c.nextSibling){
+   if(c.nodeType===3){var v=c.nodeValue;if(v.trim()&&CYR.test(v))out.push({t:'text',node:c,key:norm(v)})}
+   else if(c.nodeType===1)walk(c)}
+ })(root);return out}
+if(window.__ALMA_EXTRACT){window.__almaCollect=function(root){return collect(root||document.body,[]).map(function(r){return[r.t,r.key]})};return}
+var lang='uk',saved=new Map(),obs,busy=false;
+function lead(s,t){return s.match(/^\s*/)[0]+t+s.match(/\s*$/)[0]}
+function applyRec(r,l){
+ if(l==='en'){var en=DICT[r.key];if(en===undefined)return;
+  if(r.t==='html'){if(!saved.has(r.el))saved.set(r.el,{t:'html',v:r.el.innerHTML});r.el.innerHTML=en}
+  else if(r.t==='text'){if(!saved.has(r.node))saved.set(r.node,{t:'text',v:r.node.nodeValue});r.node.nodeValue=lead(r.node.nodeValue,en)}
+  else{var k=r.el;var s=saved.get(k)||{t:'attr',v:{}};if(!(r.a in s.v))s.v[r.a]=r.el.getAttribute(r.a);saved.set(k,s);r.el.setAttribute(r.a,en)}}
+}
+function revert(){saved.forEach(function(s,k){if(s.t==='html')k.innerHTML=s.v;else if(s.t==='text')k.nodeValue=s.v;else for(var a in s.v)k.setAttribute(a,s.v[a])});saved.clear()}
+function meta(l){
+ var M=DICT.__meta||{};if(!window.__ukMeta){window.__ukMeta={title:document.title,d:[].map.call(document.querySelectorAll('meta[name=description],meta[property="og:description"],meta[name="twitter:description"]'),function(m){return m.content}),t:[].map.call(document.querySelectorAll('meta[property="og:title"],meta[name="twitter:title"]'),function(m){return m.content})}}
+ var u=window.__ukMeta;document.title=l==='en'&&M.title?M.title:u.title;
+ document.querySelectorAll('meta[name=description],meta[property="og:description"],meta[name="twitter:description"]').forEach(function(m,i){m.content=l==='en'&&M.desc?M.desc:u.d[i]});
+ document.querySelectorAll('meta[property="og:title"],meta[name="twitter:title"]').forEach(function(m,i){m.content=l==='en'&&M.title?M.title:u.t[i]})}
+function run(root,l){busy=true;try{collect(root||document.body,[]).forEach(function(r){applyRec(r,l)})}finally{busy=false}}
+function setLang(l,init){
+ lang=l;document.documentElement.lang=l;
+ document.querySelectorAll('.lang button').forEach(function(b){var on=b.dataset.l===l;b.classList.toggle('on',on);b.setAttribute('aria-pressed',on)});
+ if(obs)obs.disconnect();
+ if(l==='en')run(document.body,'en');else revert();
+ meta(l);
+ if(l==='en'&&obs)startObs();
+ fixW();
+ if(!init)try{dispatchEvent(new Event('resize'))}catch(e){}
+}
+
+function bset(b,en){var sv=[];(function w(n){for(var c=n.firstChild;c;c=c.nextSibling){if(c.nodeType===3&&saved.has(c)){sv.push([c,c.nodeValue]);c.nodeValue=saved.get(c).v}else if(c.nodeType===1)w(c)}})(b);return sv}
+function fixW(){
+ var bs=[].slice.call(document.querySelectorAll('.btn,.tabs button'));
+ bs.forEach(function(b){b.style.minWidth=''});
+ if(lang!=='en')return;
+ var ws=bs.map(function(b){var h=saved.get(b),keep=null;if(h&&h.t==='html'){keep=b.innerHTML;b.innerHTML=h.v}var sv=bset(b);var w=b.getBoundingClientRect().width;sv.forEach(function(p){p[0].nodeValue=p[1]});if(keep!==null)b.innerHTML=keep;return w});
+ bs.forEach(function(b,i){if(ws[i]>0)b.style.minWidth=Math.ceil(ws[i])+'px'})}
+window.__almaFixW=fixW;
+var wt;addEventListener('resize',function(){clearTimeout(wt);wt=setTimeout(fixW,250)});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){if(lang==='en')fixW()});
+function startObs(){obs.observe(document.body,{childList:true,subtree:true,characterData:true})}
+var pend=null;
+obs=new MutationObserver(function(ms){
+ if(busy||lang!=='en')return;
+ var roots=new Set();ms.forEach(function(m){var n=m.type==='characterData'?m.target.parentNode:m.target;if(n&&n.nodeType===1&&!(n.closest&&n.closest('[data-noi18n]')))roots.add(n)});
+ obs.disconnect();
+ roots.forEach(function(n){if(document.body.contains(n))run(n,'en')});fixW();
+ startObs()});
+var cur='uk';try{cur=localStorage.getItem('alma-lang')||'uk'}catch(e){}
+document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){var l=b.dataset.l;try{localStorage.setItem('alma-lang',l)}catch(e){}setLang(l)})});
+setLang(cur==='en'?'en':'uk',true);
+})();
+
+</script>
+</body>
+</html>
